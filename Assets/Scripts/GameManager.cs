@@ -4,18 +4,29 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class GameManager : Singleton<GameManager> {
-      public static GameManager Instance;
+    public static GameManager Instance;
 
     //Which stage the game is in
     public bool stage1;
     public bool stage2;
 
     public Text db;
+    public bool miniGame;
+
+    public float temp;
+    public int airPressure;
+    public bool isAirPressureLow;
+    public float humidity;
+    public float windSpeed;
+
+    //Progress the student has made
+    public int progress; 
 
 
 	// Use this for initialization
 	void Start () {
 	 LOLSDK.Init ("stump.weathergame");
+     progress = 0;
     
 	}
 	
@@ -30,4 +41,12 @@ public class GameManager : Singleton<GameManager> {
         db.text = newtext;        
 
     }
+
+    public void ProgressUpdate (){
+        progress += 1;
+        LOLSDK.Instance.SubmitProgress(0, progress, 11);        
+    
+    }
+
+        
 }
