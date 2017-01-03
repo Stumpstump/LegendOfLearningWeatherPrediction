@@ -14,12 +14,14 @@ public class Humidity : MonoBehaviour {
     public GameManager gm;
     
     private bool on;
+    public Button endbutton;
 
 	// Use this for initialization
 	void Start () {
         humidity.gameObject.SetActive(false);
         proper = false;
         on = false;
+        endbutton.interactable = false;
 	
 	}
 	
@@ -36,12 +38,17 @@ public class Humidity : MonoBehaviour {
         }
 	
         if (proper == true && generate == false){
-            humidity.GetComponent<Text>().text = gm.humidity.ToString() + "%";
+                ShowNumbers();
             
         }
 	
 	}
 
+    public void ShowNumbers(){
+            humidity.GetComponent<Text>().text = gm.humidity.ToString() + "%";
+            endbutton.interactable = true;
+            proper = false;
+    }
     public void TurnOn(){
         if (on == false){
         humidity.GetComponent<Text>().text = "0000%";

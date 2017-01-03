@@ -3,8 +3,8 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class GameManager : Singleton<GameManager> {
-    public static GameManager Instance;
+public class GameManager : MonoBehaviour  {
+    
 
     //Which stage the game is in
     public bool stage1;

@@ -43,6 +43,27 @@ public class Object : MonoBehaviour {
                     gm.miniGame = true;
                     
                 }
+
+                else if (therm == true){
+                    thermometer.gameObject.SetActive(true);
+                    beenClicked = true;
+                    gm.miniGame = true;
+                    
+                }
+
+                else if (anem == true){
+                    anememe.gameObject.SetActive(true);
+                    beenClicked = true;
+                    gm.miniGame = true;
+                    
+                }
+
+                else if (humid == true){
+                    humidity.gameObject.SetActive(true);
+                    beenClicked = true;
+                    gm.miniGame = true;
+                    
+                }
                 
             }
 
