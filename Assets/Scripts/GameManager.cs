@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour  {
 	void Start () {
 	 LOLSDK.Init ("stump.weathergame");
      progress = 0;
-     balloonFall = 0;
+     balloonFall = false;
     
 	}
 	
