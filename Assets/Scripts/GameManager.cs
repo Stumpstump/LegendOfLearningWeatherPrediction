@@ -25,11 +25,14 @@ public class GameManager : MonoBehaviour  {
     //Progress the student has made
     public int progress; 
 
+    public bool balloonFall;
+
 
 	// Use this for initialization
 	void Start () {
 	 LOLSDK.Init ("stump.weathergame");
      progress = 0;
+     balloonFall = 0;
     
 	}
 	
@@ -47,7 +50,11 @@ public class GameManager : MonoBehaviour  {
 
     public void ProgressUpdate (){
         progress += 1;
-        LOLSDK.Instance.SubmitProgress(0, progress, 11);        
+        LOLSDK.Instance.SubmitProgress(0, progress, 11);  
+        if (progress == 6){
+            balloonFall = true;
+
+        }
     
     }
 

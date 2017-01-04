@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8dc80ec59bf2a6247bfdf3d6466e93b9
-timeCreated: 1483500591
+timeCreated: 1483549347
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -23,6 +23,8 @@ TextureImporter:
     21300032: Base
     21300034: Tree
     21300036: star
+    21300038: guiline
+    21300040: curve
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -283,10 +285,10 @@ TextureImporter:
       name: Base
       rect:
         serializedVersion: 2
-        x: 748
-        y: 108
-        width: 275
-        height: 217
+        x: 745
+        y: 113
+        width: 278
+        height: 230
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,6 +315,32 @@ TextureImporter:
         y: 45
         width: 32
         height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: guiline
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 84
+        width: 3
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: curve
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 82
+        width: 26
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
