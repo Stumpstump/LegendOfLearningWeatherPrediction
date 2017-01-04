@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8dc80ec59bf2a6247bfdf3d6466e93b9
-timeCreated: 1483397107
+timeCreated: 1483500591
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -15,6 +15,14 @@ TextureImporter:
     21300016: RainGauge
     21300018: Dopplar
     21300020: Themometer
+    21300022: SmallWing
+    21300024: SmallDirt
+    21300026: LargeDirt
+    21300028: LargeWing
+    21300030: Dirt
+    21300032: Base
+    21300034: Tree
+    21300036: star
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -68,9 +76,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 12
-        y: 452
-        width: 307
-        height: 307
+        y: 455
+        width: 308
+        height: 304
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -80,10 +88,10 @@ TextureImporter:
       name: Cloud01
       rect:
         serializedVersion: 2
-        x: 330
-        y: 643
-        width: 156
-        height: 110
+        x: 8
+        y: 322
+        width: 207
+        height: 129
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -93,10 +101,10 @@ TextureImporter:
       name: Cloud02
       rect:
         serializedVersion: 2
-        x: 531
-        y: 616
-        width: 201
-        height: 140
+        x: 214
+        y: 342
+        width: 159
+        height: 113
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,10 +114,10 @@ TextureImporter:
       name: Cloud03
       rect:
         serializedVersion: 2
-        x: 780
-        y: 656
-        width: 199
-        height: 97
+        x: 4
+        y: 184
+        width: 195
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,10 +127,10 @@ TextureImporter:
       name: Cloud04
       rect:
         serializedVersion: 2
-        x: 759
-        y: 476
-        width: 241
-        height: 152
+        x: 201
+        y: 245
+        width: 194
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +205,114 @@ TextureImporter:
       name: Themometer
       rect:
         serializedVersion: 2
-        x: 694
+        x: 347
         y: 24
-        width: 68
+        width: 71
         height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SmallWing
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 170
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SmallDirt
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 135
+        width: 77
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeDirt
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 5
+        width: 242
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeWing
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 101
+        width: 171
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dirt
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 2
+        width: 258
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Base
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 108
+        width: 275
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tree
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 351
+        width: 296
+        height: 417
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: star
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 45
+        width: 32
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
