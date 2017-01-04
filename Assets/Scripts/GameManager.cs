@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour  {
     public bool stage1;
     public bool stage2;
 
-    public Text db;
+    public Text descriptionBox;
     public bool miniGame;
 
     public float temp;
@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour  {
     public float humidity;
     public float windSpeed;
 
+    public MCButton multipleChoice1;
+    public MCButton multipleChoice2;
+    public MCButton multipleChoice3;
     //Progress the student has made
     public int progress; 
 
@@ -38,7 +41,7 @@ public class GameManager : MonoBehaviour  {
     //Call when changing dialogue shown
     public void UpdateDB(string newtext){
     
-        db.text = newtext;        
+        descriptionBox.text = newtext;        
 
     }
 
