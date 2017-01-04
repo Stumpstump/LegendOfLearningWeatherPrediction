@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8dc80ec59bf2a6247bfdf3d6466e93b9
-timeCreated: 1483549347
+timeCreated: 1483571248
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -25,6 +25,15 @@ TextureImporter:
     21300036: star
     21300038: guiline
     21300040: curve
+    21300042: End01
+    21300044: end02
+    21300046: End03
+    21300048: end04
+    21300050: end05
+    21300052: TransparentBackdrop
+    21300054: Sun02
+    21300056: Sun03
+    21300058: Sun04
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -77,10 +86,10 @@ TextureImporter:
       name: Sun01
       rect:
         serializedVersion: 2
-        x: 12
-        y: 455
-        width: 308
-        height: 304
+        x: 0
+        y: 600
+        width: 167
+        height: 168
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -92,7 +101,7 @@ TextureImporter:
         serializedVersion: 2
         x: 8
         y: 322
-        width: 207
+        width: 206
         height: 129
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -103,9 +112,9 @@ TextureImporter:
       name: Cloud02
       rect:
         serializedVersion: 2
-        x: 214
+        x: 216
         y: 342
-        width: 159
+        width: 157
         height: 113
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -341,6 +350,123 @@ TextureImporter:
         y: 82
         width: 26
         height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: End01
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 696
+        width: 25
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end02
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 696
+        width: 25
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: End03
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 696
+        width: 25
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end04
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 696
+        width: 25
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end05
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 696
+        width: 19
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TransparentBackdrop
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 84
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sun02
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 532
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sun03
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 531
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sun04
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 462
+        width: 70
+        height: 69
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
