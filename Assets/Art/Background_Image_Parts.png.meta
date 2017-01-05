@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8dc80ec59bf2a6247bfdf3d6466e93b9
-timeCreated: 1483571248
+timeCreated: 1483580313
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -29,7 +29,7 @@ TextureImporter:
     21300044: end02
     21300046: End03
     21300048: end04
-    21300050: end05
+    21300050: Middle
     21300052: TransparentBackdrop
     21300054: Sun02
     21300056: Sun03
@@ -408,7 +408,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: end05
+      name: Middle
       rect:
         serializedVersion: 2
         x: 433
