@@ -11,6 +11,10 @@ public class GameManager : MonoBehaviour  {
     public bool stage1;
     public bool stage2;
 
+    public GameObject menuPanel;
+    public GameObject stage1panel;
+    public GameObject stage2panel;
+
     public Text descriptionBox;
     public bool miniGame;
 
@@ -49,6 +53,11 @@ public class GameManager : MonoBehaviour  {
 
     }
 
+    public void ButtonClickNoise(){
+        LOLSDK.Instance.PlaySound("FX/click1.mp3");
+
+    }
+
     public void ProgressUpdate (){
         progress += 1;
         LOLSDK.Instance.SubmitProgress(0, progress, 11);  
@@ -57,6 +66,14 @@ public class GameManager : MonoBehaviour  {
 
         }
     
+    }
+
+    public void StartGame(){
+        stage1 = true;
+        stage1panel.SetActive(true);
+         menuPanel.SetActive(false);
+        LOLSDK.Instance.PlaySound( "Music/birdy.mp3", true, true);
+
     }
 
     public void Pause (){
