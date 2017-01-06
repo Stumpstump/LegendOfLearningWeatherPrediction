@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: c91b0fe5a42e66846aafaa1e2fa67281
-timeCreated: 1483720913
+timeCreated: 1483737003
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: StageTwo_0
+    21300002: StageTwo_1
+    21300004: StageTwo_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,6 +63,32 @@ TextureImporter:
         y: 448
         width: 1024
         height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StageTwo_1
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 0
+        width: 141
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: StageTwo_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 136
+        height: 441
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
