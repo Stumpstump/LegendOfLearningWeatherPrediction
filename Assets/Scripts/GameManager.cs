@@ -135,15 +135,17 @@ public class GameManager : MonoBehaviour  {
 
     public void Pause (){
         Time.timeScale = 0;
-
+        LOLSDK.Instance.PlaySound("FX/click1.mp3");
         }
 
     public void Resume(){
         Time.timeScale = 1f;
+        LOLSDK.Instance.PlaySound("FX/click1.mp3");
     }
 
     public void Restart(){
         SceneManager.LoadScene ("_Init");
+        LOLSDK.Instance.StopSound( "Music/birdy.mp3");
     }
 
         

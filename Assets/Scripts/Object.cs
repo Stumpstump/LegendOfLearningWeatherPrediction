@@ -32,7 +32,7 @@ public class Object : MonoBehaviour {
 	}
 
     public void Clicked(){
-
+        LOLSDK.Instance.PlaySound("FX/click1.mp3");
         gm.UpdateDB(description);
         if (gm.miniGame == false){
             if (important == true && beenClicked == false){
@@ -77,6 +77,7 @@ public class Object : MonoBehaviour {
     }
 
     public void FinishMinigame(){
+            LOLSDK.Instance.PlaySound("FX/click1.mp3");
         if (baro == true){
                     barometer.gameObject.SetActive(false);                    
                     gm.miniGame = false;                    
