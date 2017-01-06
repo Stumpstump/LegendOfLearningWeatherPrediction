@@ -29,7 +29,7 @@ public class Anemometer : MonoBehaviour {
         }
 	
         if (proper == true){
-            display.text = gm.windSpeed.ToString();
+            display.text = gm.windSpeedM.ToString();
             proper = false;
         }
 	}
@@ -42,10 +42,10 @@ public class Anemometer : MonoBehaviour {
 
     public void MPHtoKMH(){
          //manually have values here
-        display.text = (float.Parse(display.text) * 1.609344f).ToString();
+        display.text = gm.windSpeedK.ToString();
     }
     public void KMHtoMPH(){
-        display.text = (float.Parse(display.text) / 1.609344f).ToString();
+        display.text = gm.windSpeedM.ToString();
 
     }
     

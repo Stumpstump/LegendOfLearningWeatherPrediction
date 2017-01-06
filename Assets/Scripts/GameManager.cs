@@ -22,7 +22,13 @@ public class GameManager : MonoBehaviour  {
     public int airPressure;
     public bool isAirPressureLow;
     public float humidity;
-    public float windSpeed;
+    public float windSpeedM;
+    public float windSpeedK;
+
+    public float predictTemp;
+    public int predictAirPressure;
+    public float predictHumidity;
+    public float predictWind;
 
     public MCButton multipleChoice1;
     public MCButton multipleChoice2;
@@ -46,6 +52,57 @@ public class GameManager : MonoBehaviour  {
 	
 	}
 
+    public void Scenario1(){
+        //Cold rain windy
+        temp = 68f;
+        airPressure = 1007;
+        humidity = 35f;
+        windSpeedM = 13f;
+        windSpeedK = 20.92f;
+        isAirPressureLow = true;
+
+        predictTemp = 44f;
+        predictAirPressure = 966;
+        predictHumidity = 50f;
+        predictWind = 26f;
+        
+
+     }
+
+
+    public void Scenario2(){
+        //Hot sunny calm
+        temp = 79f;
+        airPressure = 1028;
+        humidity = 15f;
+        windSpeedM = 10f;
+        windSpeedK = 16.09f;
+        isAirPressureLow = false;
+
+        predictTemp = 85f;
+        predictAirPressure = 1038;
+        predictHumidity = 15f;
+        predictWind = 10f;
+        
+    }
+
+
+    public void Scenario3(){
+        //Cool, cloudy, dry, windy
+        temp = 54f;
+        airPressure = 994;
+        humidity = 10f;
+        windSpeedM = 15f;
+        windSpeedK = 24.14f;
+        isAirPressureLow = false;
+
+        predictTemp = 63f;
+        predictAirPressure = 1012;
+        predictHumidity = 25f;
+        predictWind = 18f;
+        
+
+    }
     //Call when changing dialogue shown
     public void UpdateDB(string newtext){
     

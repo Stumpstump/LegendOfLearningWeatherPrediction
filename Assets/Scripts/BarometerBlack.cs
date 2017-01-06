@@ -35,33 +35,21 @@ public class BarometerBlack : MonoBehaviour {
         ap = gm.airPressure;
         pressure = gm.isAirPressureLow;
        
-        if (ap == 2){
-            airP.text = (960).ToString();
+        
+         if (gm.airPressure == 994){
+            ap = 5;
+            airP.text = (994).ToString();
             }
-        else if (ap == 3){
-            airP.text = (970).ToString();
+               else if (gm.airPressure == 1007){
+                ap = 7;
+            airP.text = (1007).ToString();
             }
-        else if (ap == 4){
-            airP.text = (980).ToString();
-            }
-        else if (ap == 5){
-            airP.text = (990).ToString();
-            }
-        else if (ap == 6){
-            airP.text = (1000).ToString();
-            }
-        else if (ap == 7){
-            airP.text = (1010).ToString();
-            }
-        else if (ap == 8){
-            airP.text = (1020).ToString();
-            }
-        else if (ap == 9){
-            airP.text = (1030).ToString();
-            }
-        else if (ap == 10){
-            airP.text = (1040).ToString();
-            }
+        
+        else if (gm.airPressure == 1028){
+            ap = 9;
+            airP.text = (1028).ToString();
+            } 
+        
         
         
         locked = false;

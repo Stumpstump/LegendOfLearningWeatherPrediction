@@ -45,9 +45,9 @@ public class Humidity : MonoBehaviour {
 	}
 
     public void ShowNumbers(){
-            humidity.GetComponent<Text>().text = gm.humidity.ToString() + "%";
+            humidity.GetComponent<Text>().text = gm.humidity.ToString() + ".00%";
             endbutton.interactable = true;
-            proper = false;
+            
     }
     public void TurnOn(){
         if (on == false){
