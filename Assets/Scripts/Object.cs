@@ -23,6 +23,10 @@ public class Object : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         
+        if (baro == true){
+        description = "This is a barometer. A barometer is an instrument used to measure atmospheric pressure. To calibrate your barometer, click and drag the black pointer and move your mouse left or right until it points to the current air pressure. Then, click on the red pointer and align it with the black one.";
+        
+        }
 	
 	}
 	
