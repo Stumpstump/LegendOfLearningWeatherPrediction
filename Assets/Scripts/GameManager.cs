@@ -157,5 +157,7 @@ public class GameManager : MonoBehaviour  {
         LOLSDK.Instance.StopSound( "Music/birdy.mp3");
     }
 
+    
+
         
 }
