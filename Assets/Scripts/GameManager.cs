@@ -30,9 +30,10 @@ public class GameManager : MonoBehaviour  {
     public float predictHumidity;
     public float predictWind;
 
-    public MCButton multipleChoice1;
-    public MCButton multipleChoice2;
-    public MCButton multipleChoice3;
+    public bool Scene1;
+    public bool Scene2;
+    public bool Scene3;
+    
     //Progress the student has made
     public int progress; 
 
@@ -44,6 +45,9 @@ public class GameManager : MonoBehaviour  {
 	 LOLSDK.Init ("stump.weathergame");
      progress = 0;
      balloonFall = false;
+     Scene1 = false;
+     Scene2 = false;
+     Scene3 = false;
     
 	}
 	
@@ -65,7 +69,7 @@ public class GameManager : MonoBehaviour  {
         predictAirPressure = 966;
         predictHumidity = 50f;
         predictWind = 26f;
-        
+         Scene1 = true;
 
      }
 
@@ -83,7 +87,7 @@ public class GameManager : MonoBehaviour  {
         predictAirPressure = 1038;
         predictHumidity = 15f;
         predictWind = 10f;
-        
+        Scene2 = true;
     }
 
 
@@ -100,7 +104,7 @@ public class GameManager : MonoBehaviour  {
         predictAirPressure = 1012;
         predictHumidity = 25f;
         predictWind = 18f;
-        
+        Scene3 = true;
 
     }
     //Call when changing dialogue shown
@@ -145,6 +149,11 @@ public class GameManager : MonoBehaviour  {
 
     public void Restart(){
         SceneManager.LoadScene ("_Init");
+        progress = 0;
+        LOLSDK.Instance.StopSound( "Music/birdy.mp3");
+    }
+
+    public void StartStage2(){
         LOLSDK.Instance.StopSound( "Music/birdy.mp3");
     }
 
