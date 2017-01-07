@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8dc80ec59bf2a6247bfdf3d6466e93b9
-timeCreated: 1483580313
+timeCreated: 1483799502
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -34,6 +34,7 @@ TextureImporter:
     21300054: Sun02
     21300056: Sun03
     21300058: Sun04
+    21300060: transparent02
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -467,6 +468,19 @@ TextureImporter:
         y: 462
         width: 70
         height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transparent02
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 72
+        width: 6
+        height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
