@@ -37,14 +37,14 @@ public class GameManager : MonoBehaviour  {
     //Progress the student has made
     public int progress; 
 
-    public bool balloonFall;
+    public Animator animator;
 
 
 	// Use this for initialization
 	void Start () {
 	 LOLSDK.Init ("stump.weathergame");
      progress = 0;
-     balloonFall = false;
+     animator.enabled = false;
      Scene1 = false;
      Scene2 = false;
      Scene3 = false;
@@ -123,7 +123,7 @@ public class GameManager : MonoBehaviour  {
         progress += 1;
         LOLSDK.Instance.SubmitProgress(0, progress, 11);  
         if (progress == 6){
-            balloonFall = true;
+            animator.enabled = true;
 
         }
     

@@ -17,6 +17,7 @@ public class BarometerBlack : MonoBehaviour {
     public BarometerPointer redPointer;
 
     public bool pressure; //false = high, true = low
+    public Text futureAP;
 
     private Vector3 targetAngleHigh;
     private Vector3 targetAngleLow;
@@ -25,6 +26,7 @@ public class BarometerBlack : MonoBehaviour {
     private float timer = 0;
     public Button done;
     public GameManager gm;
+
 
    
 	// Use this for initialization
@@ -50,6 +52,7 @@ public class BarometerBlack : MonoBehaviour {
             airP.text = (1028).ToString();
             } 
         
+        futureAP.enabled = false;
         
         
         locked = false;
@@ -62,78 +65,36 @@ public class BarometerBlack : MonoBehaviour {
      if (locked == false){
             
             
-            if (ap == 2){
-                if (gameObject.transform.eulerAngles.z - 107f < 1.5f && gameObject.transform.eulerAngles.z - 107f > -1.5f){
-                    locked = true;
-                    redPointer.locked = false;
-                    targetAngleLow = new Vector3(0,0,80f);
-                    targetAngleHigh = new Vector3(0,0,125f);
-                }
-            }
-            else if (ap == 3){
-                if (gameObject.transform.eulerAngles.z - 78f < 1.5f && gameObject.transform.eulerAngles.z - 78f > -1.5f){
-                    locked = true;
-                    redPointer.locked = false;
-                    targetAngleLow = new Vector3(0,0,50f);
-                    targetAngleHigh = new Vector3(0,0,105f);
-                }
-            }
-            else if (ap == 4){
-                if (gameObject.transform.eulerAngles.z - 48f < 1.5f && gameObject.transform.eulerAngles.z - 48f > -1.5f){
-                    locked = true;
-                    redPointer.locked = false;
-                    targetAngleLow = new Vector3(0,0,24f);
-                    targetAngleHigh = new Vector3(0,0,70f);
-                }
-            }
-            else if (ap == 5){
+            ///Scenario 3
+             if (ap == 5){
                 if (gameObject.transform.eulerAngles.z  - 25f < 1.5f && gameObject.transform.eulerAngles.z - 25f > -1.5f){
                     locked = true;
                     redPointer.locked = false;
-                    targetAngleLow = new Vector3(0,0,0f);
-                    targetAngleHigh = new Vector3(0,0,50f);
+                    targetAngleLow = new Vector3(0,0,-28f);
+                    
                 }
             }
-            else if (ap == 6){
-                if (gameObject.transform.eulerAngles.z  - 0 < 1.5f && gameObject.transform.eulerAngles.z - 0 > -1.5f){
-                    locked = true;
-                    redPointer.locked = false;
-                    targetAngleLow = new Vector3(0,0,-25f);
-                    targetAngleHigh = new Vector3(0,0,25f);
-                }
-            }
+            
+            ///Scenario 1
             else if (ap == 7){
                 if (gameObject.transform.eulerAngles.z  - 330f < 1.5f && gameObject.transform.eulerAngles.z - 330f > -1.5f){
                     locked = true;
                     redPointer.locked = false;
-                    targetAngleLow = new Vector3(0,0,310f);
-                    targetAngleHigh = new Vector3(0,0,350f);
+                    
+                    targetAngleHigh = new Vector3(0,0,93f);
                 }
             }
-            else if (ap == 8){
-                if (gameObject.transform.eulerAngles.z - 309 < 1.5f && gameObject.transform.eulerAngles.z - 309f > -1.5f){
-                    locked = true;
-                    redPointer.locked = false;
-                    targetAngleLow = new Vector3(0,0,280f);
-                    targetAngleHigh = new Vector3(0,0,330f);
-                }
-            }
+            
+            //Scenario 2
             else if (ap == 9){
                 if (gameObject.transform.eulerAngles.z  - 283f < 1.5f && gameObject.transform.eulerAngles.z - 283f > -1.5f){
                     locked = true;
                     redPointer.locked = false;
-                    targetAngleLow = new Vector3(0,0,260f);
-                    targetAngleHigh = new Vector3(0,0,300f);
+                    pressure = true;
+                    targetAngleHigh = new Vector3(0,0,-102f);
                 }
             }
-             else if (ap == 10){
-                if (gameObject.transform.eulerAngles.z  - 253f < 1.5f && gameObject.transform.eulerAngles.z - 253f > -1.5f){
-                    locked = true;
-                    redPointer.locked = false;
-                    targetAngleLow = new Vector3(0,0,230f);
-                    targetAngleHigh = new Vector3(0,0,270f);
-                }
-            }
+             
             
             
             }
@@ -147,6 +108,8 @@ public class BarometerBlack : MonoBehaviour {
              
                         transform.eulerAngles = currentAngle;
                         done.interactable = true;
+                        futureAP.enabled = true;
+                        futureAP.text = gm.predictAirPressure.ToString();
                 }
                 if (pressure == false){
                         
@@ -154,6 +117,8 @@ public class BarometerBlack : MonoBehaviour {
              
                         transform.eulerAngles = currentAngle;
                         done.interactable = true;
+                        futureAP.enabled = true;
+                        futureAP.text = gm.predictAirPressure.ToString();
                 }
             }
         }
