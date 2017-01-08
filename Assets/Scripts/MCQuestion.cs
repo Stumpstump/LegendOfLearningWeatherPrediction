@@ -26,6 +26,12 @@ public class MCQuestion : MonoBehaviour {
 
     public Text question;
 
+    //Rationales
+    public string rightT;
+    public string wrongT1;
+    public string wrongT2;
+    public string wrongT3;
+
     public MCButton answers;
 
     public bool set1;
@@ -33,12 +39,18 @@ public class MCQuestion : MonoBehaviour {
     public bool set3;
     public bool set4;
 
+    public WhichAnswer answer1;
+    public WhichAnswer answer2;
+    public WhichAnswer answer3;
+    public WhichAnswer answer4;
+
     public GameObject victorypanel;
 
 	// Use this for initialization
 	void Start () {
 	
        
+           if (set1 == true){
             int randy = Random.Range(1,4);
             if (randy == 1){
                 Question1();
@@ -50,6 +62,7 @@ public class MCQuestion : MonoBehaviour {
                 Question3();
             }
             answers.UpdateAnswers();
+       }
         
 
          
@@ -112,24 +125,46 @@ public class MCQuestion : MonoBehaviour {
         }
         
             answers.UpdateAnswers();
-
+            answer1.Activate();
+            answer2.Activate();
+            answer3.Activate();
+            answer4.Activate();
         }
 
+    void FinalQuestion1(){
+
+
+    }
+
+    void FinalQuestion2(){
+
+
+    }
+
+    void FinalQuestion3(){
+
+
+    }
     //Current weather
 
     void Question1(){
 
         currentTempT.text ="88°F";
-        currentWindT.text ="5";
-        currentHumidityT.text ="15";
+        currentWindT.text ="5 MPH";
+        currentHumidityT.text ="15%";
         currentAPT.text ="1033";
 
         question.text ="Based on the given data, what is the current weather like? Choose the closest answer.";
 
         answers.rightAnswer = "A hot dry day with a clear sky";
+        rightT = "Correct! High temperature, low humidity, and high air pressure point to a hot dry day with a clear sky.";
         answers.wrongAnswer1 = "A hot humid day and cloudy skies";
         answers.wrongAnswer2 = "A hot stormy day";
         answers.wrongAnswer3 = "A cool stormy day";
+
+        wrongT1 = "Incorrect. The humidity level is only 15%, which is low. Try again.";
+        wrongT2 = "Incorrect. It is a hot day, but take another look at the air pressure.";
+        wrongT3 = "Incorrect. The temprature is fairly hot and the humidity is low.";
 
     }
 
@@ -137,15 +172,19 @@ public class MCQuestion : MonoBehaviour {
 
         currentTempT.text ="62°F";
         currentWindT.text ="23 MPH";
-        currentHumidityT.text ="77";
+        currentHumidityT.text ="77%";
         currentAPT.text ="977";
 
         question.text ="Based on the given data, what is the current weather like? Choose the closest answer.";
-
+        rightT = "Correct! Mild temperatures, high humidity, fast wind speeds, and low air pressure all point to a cool stormy day.";
         answers.rightAnswer = "A cool stormy day";
         answers.wrongAnswer1 = "A hot stormy day";
         answers.wrongAnswer2 = "A hot dry day with a clear sky";
         answers.wrongAnswer3 = "A hot humid day and cloudy skies";
+
+        wrongT1 = "Incorrect. It's not quite hot outside.";
+        wrongT2 = "Incorrect. Take a look at the temperature again. Also, note how the humidity is very high.";
+        wrongT3 = "Incorrect. Check the temperature and the air pressure again. ";
 
     }
 
@@ -153,15 +192,19 @@ public class MCQuestion : MonoBehaviour {
 
         currentTempT.text ="92°F";
         currentWindT.text ="9 MPH";
-        currentHumidityT.text ="68";
+        currentHumidityT.text ="68%";
         currentAPT.text ="998";
 
         question.text ="Based on the given data, what is the current weather like? Choose the closest answer.";
-
+        rightT = "Correct! High temperature, high humidity, and mild air pressure point to a hot humid day.";
         answers.rightAnswer = "A hot humid day and cloudy skies";
         answers.wrongAnswer1 = "A cool stormy day";
         answers.wrongAnswer2 = "A hot stormy day";
         answers.wrongAnswer3 = "A hot dry day with a clear sky";
+
+        wrongT1 = "Incorrect. Take another look at the temperature";
+        wrongT2 = "Incorrect, but close. It is a hot day with lots of humidity, but check the air pressure again.";
+        wrongT3 = "Incorrect. Check the humidity again as well as the air pressure.";
 
     }
 
@@ -182,11 +225,15 @@ public class MCQuestion : MonoBehaviour {
         futureAPT.text ="981";
 
         question.text ="Compare the current data and the future data. How did the weather change from current to future conditions?";
-
+        rightT = "Correct! Good job.";
         answers.rightAnswer = "It went from a hot dry day to a cool stormy day";
         answers.wrongAnswer1 = "It went from a cool stormy day to a hot dry day";
         answers.wrongAnswer2 = "It went from a hot dry day to a hot stormy day";
         answers.wrongAnswer3 = "It stayed the same";
+
+        wrongT1 = "Incorrect. Check the temperatures and  the humidity again.";
+        wrongT2 = "Incorrect. Check the data on the second day again.";
+        wrongT3 = "Incorrect. Look over the data again.";
 
     }
 
@@ -203,11 +250,15 @@ public class MCQuestion : MonoBehaviour {
         futureAPT.text ="1011";
 
         question.text ="Compare the current data and the future data. How did the weather change from current to future conditions?";
-
+        rightT = "Correct! Good job.";
         answers.rightAnswer = "It went from a cool stormy day to a hot dry day";
         answers.wrongAnswer1 = "It went from a hot dry day to a cool stormy day";
         answers.wrongAnswer2 = "It went from a hot dry day to a hot stormy day";
         answers.wrongAnswer3 = "It stayed the same";
+
+        wrongT1 = "Incorrect. Check the temperatures and  the humidity again.";
+        wrongT2 = "Incorrect. Check the temperature, humidity, and air pressure in the first day again.";
+        wrongT3 = "Incorrect. Look over the data again.";
 
     }
 
@@ -217,18 +268,22 @@ public class MCQuestion : MonoBehaviour {
         currentWindT.text ="11 MPH";
         currentHumidityT.text ="70%";
         currentAPT.text ="1001";
-
+    
         futureTempT.text ="89°F";
         futureWindT.text ="7 MPH";
         futureHumidityT.text ="64%";
         futureAPT.text ="1004";
 
         question.text ="Compare the current data and the future data. How did the weather change from current to future conditions?";
-
+        rightT = "Correct! Good job.";
         answers.rightAnswer = "It stayed the same";
         answers.wrongAnswer1 = "It went from a hot dry day to a cool stormy day";
         answers.wrongAnswer2 = "It went from a cool stormy day to a hot dry day";
         answers.wrongAnswer3 = "It went from a hot dry day to a hot stormy day";
+
+        wrongT1 = "Incorrect. Check the data on the second day again.";
+        wrongT2 = "Incorrect. Check the data on the first day again.";
+        wrongT3 = "Incorrect. Check the air pressure of the second day.";
 
     }
 
@@ -249,11 +304,15 @@ public class MCQuestion : MonoBehaviour {
         futureAPT.text ="985";
 
         question.text ="You have been provided what kind of weather will happen tomorrow. Based on that information, what was the wind speed?";
-
+        rightT = "Correct! Based on the air pressure and higher humidity, one can assume that the weather went from calm to stormy.";
         answers.rightAnswer = "5 MPH";
         answers.wrongAnswer1 = "20 MPH";
         answers.wrongAnswer2 = "34 MPH";
         answers.wrongAnswer3 = "23 MPH";
+
+        wrongT1 = "Incorrect. Look at the difference in air pressure.";
+        wrongT2 = "Incorrect. Look at the difference in humidity.";
+        wrongT3 = "Incorrect. Look at the difference in air pressure or humidity.";
 
     }
 
@@ -270,11 +329,15 @@ public class MCQuestion : MonoBehaviour {
         futureAPT.text ="996";
 
         question.text ="You have been provided what kind of weather will happen tomorrow. Based on that information, what was the temperature?";
-
+        rightT = "";
         answers.rightAnswer = "64°F";
         answers.wrongAnswer1 = "33°F";
         answers.wrongAnswer2 = "78°F";
         answers.wrongAnswer3 = "91°F";
+
+        wrongT1 = "";
+        wrongT2 = "";
+        wrongT3 = "";
 
     }
  
@@ -291,11 +354,15 @@ public class MCQuestion : MonoBehaviour {
         futureAPT.text ="1025";
 
         question.text ="You have been provided what kind of weather will happen tomorrow. Based on that information, what was the air pressure?";
-
+        rightT = "Correct! The temperature, wind speed, and humidity all stayed the same. This indicates that there was no change in air pressure.";
         answers.rightAnswer = "1024";
         answers.wrongAnswer1 = "961";
         answers.wrongAnswer2 = "1041";
         answers.wrongAnswer3 = "989";
+    
+        wrongT1 = "Incorrect. Look at the difference in the temperature.";
+        wrongT2 = "Incorrect. Look at the difference in humidity.";
+        wrongT3 = "Incorrect. Look at the difference in wind speed.";
 
     }
 
@@ -305,16 +372,68 @@ public class MCQuestion : MonoBehaviour {
 
     void Question10(){
 
+        currentTempT.text ="90°F";
+        currentWindT.text ="8 MPH";
+        currentHumidityT.text ="33%";
+        currentAPT.text ="1030";
 
+       
+        futureAPT.text ="1025";
+    
+        question.text ="Based on the current weather data and predicted air pressure, what will be tomorrow's forecast?";
+        rightT = "Correct! There was not a change in the air pressure, which indicates that the weather has not changed much. The day before was was hot, dry, and calm, so the day after should be too.";
+        answers.rightAnswer = "Tomorrow will be a hot dry calm day";
+        answers.wrongAnswer1 = "Tomorrow will be a cold dry calm day";
+        answers.wrongAnswer2 = "Tomorrow will be a cold stormy day";
+        answers.wrongAnswer3 = "Tomorrow will be a hot stormy day";
+    
+        wrongT1 = "Incorrect. Usually the lower the air pressure is the colder it gets. Look at the air pressure again.";
+        wrongT2 = "Incorrect. Look at the air pressure of the second day.";
+        wrongT3 = "Incorrect. Look at the air pressure of the second day.";
     }
 
     void Question11(){
 
+        currentTempT.text ="83°F";
+        currentWindT.text ="5 MPH";
+        currentHumidityT.text ="68%";
+        currentAPT.text ="1024";
 
+       
+        futureAPT.text ="982";
+
+        question.text ="Based on the current weather data and predicted air pressure, what will be tomorrow's forecast?";
+        rightT = "Correct! The air pressure went from high to low indicating that bad weather is on its way. The high humidity also indicates a high chance of rain.";
+        answers.rightAnswer = "Tomorrow will be a cool stormy day";
+        answers.wrongAnswer1 = "Tomorrow will be a cold dry calm day";
+        answers.wrongAnswer2 = "Tomorrow will be a hot dry calm day";
+        answers.wrongAnswer3 = "Tomorrow will be a hot stormy day";
+
+        wrongT1 = "Incorrect. Look at the air pressure and humidity again.";
+        wrongT2 = "Incorrect. Look at the air pressure again.";
+        wrongT3 = "Incorrect. Look at the air pressure again.";
     }
 
     void Question12(){
 
+        currentTempT.text ="55°F";
+        currentWindT.text ="23 MPH";
+        currentHumidityT.text ="88%";
+        currentAPT.text ="972";
+
+       
+        futureAPT.text ="1017";
+
+        question.text ="Based on the current weather data and predicted air pressure, what will be tomorrow's forecast?";
+        rightT = "Correct. The air pressure went up dramatically indicating that warmer, clearer weather was on its way.";
+        answers.rightAnswer = "Tomorrow will be a warm calm day";
+        answers.wrongAnswer1 = "Tomorrow will be a hot dry calm day";
+        answers.wrongAnswer2 = "The weather will stay the same";
+        answers.wrongAnswer3 = "Tomorrow will be a hot stormy day";
+
+        wrongT1 = "Incorrect. Look at the air pressure again.";
+        wrongT2 = "Incorrect. Look at the air pressure again.";
+        wrongT3 = "Incorrect. Look at the air pressure again.";
 
     }
 }

@@ -10,14 +10,12 @@ public class MCButton : MonoBehaviour {
     public string wrongAnswer2;
     public string wrongAnswer3;
 
-    public string rightDes;
-    public string wrongDes;
+   
 
     
     public GameObject rightPopup;
     public GameObject wrongPopup;
-    public Text RdesBox;
-    public Text WdesBox;
+    
     
 
     public Button choice1;
@@ -34,7 +32,7 @@ public class MCButton : MonoBehaviour {
         wrongPopup.SetActive(false);
         rightPopup.SetActive(false);
 	
-        whichButton = Random.Range (1,5);
+        whichButton = Random.Range(1,5);
         if (whichButton == 1){
             choice1.GetComponentInChildren<Text>().text = rightAnswer;
             choice2.GetComponentInChildren<Text>().text = wrongAnswer1;
@@ -42,48 +40,69 @@ public class MCButton : MonoBehaviour {
             choice4.GetComponentInChildren<Text>().text = wrongAnswer3;
 
             SetCorrect(choice1);
+            choice1.GetComponent<WhichAnswer>().right = true;
             SetIncorrect(choice2);
+            choice2.GetComponent<WhichAnswer>().wrong1 = true;
             SetIncorrect(choice3);
+            choice3.GetComponent<WhichAnswer>().wrong2 = true;
             SetIncorrect(choice4);
+            choice4.GetComponent<WhichAnswer>().wrong3 = true;
         }
-        if (whichButton == 2){
+        else if (whichButton == 2){
             choice2.GetComponentInChildren<Text>().text = rightAnswer;
             choice3.GetComponentInChildren<Text>().text = wrongAnswer1;
             choice1.GetComponentInChildren<Text>().text = wrongAnswer2;
             choice4.GetComponentInChildren<Text>().text = wrongAnswer3;
 
+            choice2.GetComponent<WhichAnswer>().right = true;
             SetCorrect(choice2);
             SetIncorrect(choice1);
+            choice1.GetComponent<WhichAnswer>().wrong2 = true;
             SetIncorrect(choice3);
+            choice3.GetComponent<WhichAnswer>().wrong1 = true;
             SetIncorrect(choice4);
+            choice4.GetComponent<WhichAnswer>().wrong3 = true;
+        
         }
-        if (whichButton == 3){
+        else if (whichButton == 3){
             choice3.GetComponentInChildren<Text>().text = rightAnswer;
             choice1.GetComponentInChildren<Text>().text = wrongAnswer1;
             choice2.GetComponentInChildren<Text>().text = wrongAnswer2;
             choice4.GetComponentInChildren<Text>().text = wrongAnswer3;
 
+             choice3.GetComponent<WhichAnswer>().right = true;
             SetCorrect(choice3);
             SetIncorrect(choice2);
-            SetIncorrect(choice1);
+            choice2.GetComponent<WhichAnswer>().wrong2 = true;
+            SetIncorrect(choice1);  
+            choice1.GetComponent<WhichAnswer>().wrong1 = true;
             SetIncorrect(choice4);
+            choice4.GetComponent<WhichAnswer>().wrong3 = true;
         }
 
-        if (whichButton == 4){
+        else if (whichButton == 4){
             choice4.GetComponentInChildren<Text>().text = rightAnswer;
             choice1.GetComponentInChildren<Text>().text = wrongAnswer1;
             choice3.GetComponentInChildren<Text>().text = wrongAnswer2;
             choice2.GetComponentInChildren<Text>().text = wrongAnswer3;
 
+             choice4.GetComponent<WhichAnswer>().right = true;
             SetCorrect(choice4);
             SetIncorrect(choice2);
+            choice2.GetComponent<WhichAnswer>().wrong3 = true;
             SetIncorrect(choice1);
+            choice1.GetComponent<WhichAnswer>().wrong1 = true;
             SetIncorrect(choice3);
+            choice3.GetComponent<WhichAnswer>().wrong2 = true;
         }
 	}
 	
     public void UpdateAnswers(){
-
+    choice1.GetComponent<WhichAnswer>().Reset();
+    choice2.GetComponent<WhichAnswer>().Reset();
+    choice3.GetComponent<WhichAnswer>().Reset();
+    choice4.GetComponent<WhichAnswer>().Reset();
+    
     whichButton = Random.Range (1,5);
         if (whichButton == 1){
             choice1.GetComponentInChildren<Text>().text = rightAnswer;
@@ -92,43 +111,60 @@ public class MCButton : MonoBehaviour {
             choice4.GetComponentInChildren<Text>().text = wrongAnswer3;
 
             SetCorrect(choice1);
+            choice1.GetComponent<WhichAnswer>().right = true;
             SetIncorrect(choice2);
+            choice2.GetComponent<WhichAnswer>().wrong1 = true;
             SetIncorrect(choice3);
+            choice3.GetComponent<WhichAnswer>().wrong2 = true;
             SetIncorrect(choice4);
+            choice4.GetComponent<WhichAnswer>().wrong3 = true;
         }
-        if (whichButton == 2){
+        else if (whichButton == 2){
             choice2.GetComponentInChildren<Text>().text = rightAnswer;
             choice3.GetComponentInChildren<Text>().text = wrongAnswer1;
             choice1.GetComponentInChildren<Text>().text = wrongAnswer2;
             choice4.GetComponentInChildren<Text>().text = wrongAnswer3;
 
+            choice2.GetComponent<WhichAnswer>().right = true;
             SetCorrect(choice2);
             SetIncorrect(choice1);
+            choice1.GetComponent<WhichAnswer>().wrong2 = true;
             SetIncorrect(choice3);
+            choice3.GetComponent<WhichAnswer>().wrong1 = true;
             SetIncorrect(choice4);
+            choice4.GetComponent<WhichAnswer>().wrong3 = true;
+        
         }
-        if (whichButton == 3){
+        else if (whichButton == 3){
             choice3.GetComponentInChildren<Text>().text = rightAnswer;
             choice1.GetComponentInChildren<Text>().text = wrongAnswer1;
             choice2.GetComponentInChildren<Text>().text = wrongAnswer2;
             choice4.GetComponentInChildren<Text>().text = wrongAnswer3;
 
+             choice3.GetComponent<WhichAnswer>().right = true;
             SetCorrect(choice3);
             SetIncorrect(choice2);
-            SetIncorrect(choice1);
+            choice2.GetComponent<WhichAnswer>().wrong2 = true;
+            SetIncorrect(choice1);  
+            choice1.GetComponent<WhichAnswer>().wrong1 = true;
             SetIncorrect(choice4);
+            choice4.GetComponent<WhichAnswer>().wrong3 = true;
         }
 
-        if (whichButton == 4){
+        else if (whichButton == 4){
             choice4.GetComponentInChildren<Text>().text = rightAnswer;
             choice1.GetComponentInChildren<Text>().text = wrongAnswer1;
             choice3.GetComponentInChildren<Text>().text = wrongAnswer2;
             choice2.GetComponentInChildren<Text>().text = wrongAnswer3;
 
+             choice4.GetComponent<WhichAnswer>().right = true;
             SetCorrect(choice4);
             SetIncorrect(choice2);
+            choice2.GetComponent<WhichAnswer>().wrong3 = true;
             SetIncorrect(choice1);
+            choice1.GetComponent<WhichAnswer>().wrong1 = true;
             SetIncorrect(choice3);
+            choice3.GetComponent<WhichAnswer>().wrong2 = true;
         }
 
 
@@ -149,7 +185,7 @@ public class MCButton : MonoBehaviour {
     }
 
     void RightAnswer(){
-        RdesBox.text = rightDes;
+        
         gm.ProgressUpdate();
         
         rightPopup.SetActive(true);
@@ -159,7 +195,7 @@ public class MCButton : MonoBehaviour {
 
     void WrongAnswer(){
 
-        WdesBox.text = wrongDes;
+        //WdesBox.text = wrongDes;
         
        
         wrongPopup.SetActive(true);
