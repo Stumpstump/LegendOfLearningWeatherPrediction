@@ -46,6 +46,8 @@ public class MCQuestion : MonoBehaviour {
 
     public GameObject victorypanel;
 
+    public GameManager gm;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -131,20 +133,56 @@ public class MCQuestion : MonoBehaviour {
             answer4.Activate();
         }
 
-    void FinalQuestion1(){
+        
 
+    public void FinalQuestion1(){
+
+        currentTempT.text = gm.temp + "°F";
+        currentWindT.text = gm.windSpeedM + " MPH";
+        currentHumidityT.text = gm.humidity.ToString() + "%";
+        currentAPT.text = gm.airPressure.ToString();
+
+        futureAPT.text = gm.predictAirPressure.ToString();
+        question.text = "What will the weather be like tomorrow based on the data you collect?";
+
+        if (gm.Scene1 == true){
+        answers.rightAnswer = "Tomorrow will be a cold rainy day.";
+        rightT = "Tomorrow's weather turned out to be exactly what you said! Great job! When the air pressure drops significantly it indicates that bad weather is coming. This includes fast wind speeds, a drop in temperature, and rainy weather.";
+        answers.wrongAnswer1 = "Tomorrow will be a hot rainy day.";
+        answers.wrongAnswer2 = "Tomorrow will be a cold dry calm day.";
+        answers.wrongAnswer3 = "Tomorrow will be a hot dry day.";
+        wrongT1 = "Oh no! Your prediction was wrong. Tomorrow turned out to be a cold rainy day. Let's look over the data again... The air pressure dropped significantly. When the air pressure drops it usually indicates bad weather is coming. This includes faster wind speed and a drop in temperature. In this case it was also humid outside, meaning a much higher chance of rain. Next time you can use that information to make a better prediction. ";
+        wrongT2 = wrongT1;
+        wrongT3 = wrongT1;
+
+        }
+        if (gm.Scene2 == true){
+
+            answers.rightAnswer = "Tomorrow will be a hot sunny calm day.";
+        rightT = "Tomorrow's weather turned out to be exactly what you said! Great job! The air pressure stayed the same, which means that the weather stayed about the same.";
+        answers.wrongAnswer1 = "Tomorrow will be a cold rainy day.";
+        answers.wrongAnswer2 = "Tomorrow will be a cold dry calm day.";
+        answers.wrongAnswer3 = "Tomorrow will be a hot rainy day.";
+        wrongT1 = "Oh no, your prediction was wrong. Tomorrow turned out to be a hot sunny calm day. Let's look over the data again. The air pressure stayed the same. This means that no significant weather changes are coming. The temperature, wind speed, and humidity will all stay about the same. Next time you can use that information to make a better prediction. ";
+        wrongT2 = wrongT1;
+        wrongT3 = wrongT1;
+
+        }
+        if (gm.Scene3 == true){
+
+            answers.rightAnswer = "Tomorrow will be a cool cloudy windy day";
+        rightT = "Tomorrow's weather turned out to be exactly what you said! Great job! The air pressure went up meaning that the weather got a bit warmer and is starting to clear up.";
+        answers.wrongAnswer1 = "Tomorrow will be a hot sunny calm day.";
+        answers.wrongAnswer2 = "Tomorrow will be a cold dry calm day.";
+        answers.wrongAnswer3 = "Tomorrow will be a hot rainy day.";
+        wrongT1 = "Your prediction was inccorect. Tomorrow turned out to be a cool windy day. Let's look over the data again. The air pressure went up a little bit. This indicates that the weather is getting better. Higher air pressure indicates that warmer weather is on its way and that weather is becoming more clear. Next time you can use that information to make a better prediction.  ";
+        wrongT2 = wrongT1;
+        wrongT3 = wrongT1;
+
+        }
 
     }
 
-    void FinalQuestion2(){
-
-
-    }
-
-    void FinalQuestion3(){
-
-
-    }
     //Current weather
 
     void Question1(){

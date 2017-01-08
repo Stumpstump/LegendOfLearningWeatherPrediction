@@ -10,7 +10,7 @@ public class MCButton : MonoBehaviour {
     public string wrongAnswer2;
     public string wrongAnswer3;
 
-   
+   public bool dontshow;
 
     
     public GameObject rightPopup;
@@ -188,8 +188,10 @@ public class MCButton : MonoBehaviour {
         
         gm.ProgressUpdate();
         
+        
         rightPopup.SetActive(true);
         wrongPopup.SetActive(false);
+        
         
     }
 
@@ -200,6 +202,7 @@ public class MCButton : MonoBehaviour {
        
         wrongPopup.SetActive(true);
         rightPopup.SetActive(false);
+        
         
     }
 }

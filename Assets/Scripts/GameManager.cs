@@ -121,7 +121,7 @@ public class GameManager : MonoBehaviour  {
 
     public void ProgressUpdate (){
         progress += 1;
-        LOLSDK.Instance.SubmitProgress(0, progress, 11);  
+        LOLSDK.Instance.SubmitProgress(0, progress, 12);  
         if (progress == 6){
             animator.enabled = true;
 
