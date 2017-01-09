@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8dc80ec59bf2a6247bfdf3d6466e93b9
-timeCreated: 1483799502
+timeCreated: 1483994477
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -35,6 +35,8 @@ TextureImporter:
     21300056: Sun03
     21300058: Sun04
     21300060: transparent02
+    21300062: 0%
+    21300064: ButtonHover
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -481,6 +483,32 @@ TextureImporter:
         y: 72
         width: 6
         height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 0%
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 514
+        width: 19
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButtonHover
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 60
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
