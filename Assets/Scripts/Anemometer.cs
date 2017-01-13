@@ -31,7 +31,7 @@ public class Anemometer : MonoBehaviour {
         if (generate == true){
             StartCoroutine(CycleNumbers());
             sec += 1 * Time.deltaTime;
-            if (sec >= 2.5){
+            if (sec >= 1.5){
                 generate = false;
                 proper = true;
             }

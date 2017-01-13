@@ -26,6 +26,8 @@ public class MCQuestion : MonoBehaviour {
 
     public Text question;
 
+  
+
     //Rationales
     public string rightT;
     public string wrongT1;
@@ -111,6 +113,7 @@ public class MCQuestion : MonoBehaviour {
             set3 = false;
             set4 = true;
              int randy = Random.Range(10,13);
+            Debug.Log(randy);
             if (randy == 10){
                 Question10();
             }
@@ -415,7 +418,10 @@ public class MCQuestion : MonoBehaviour {
         currentHumidityT.text ="33%";
         currentAPT.text ="1030";
 
-       
+
+        futureTempT.text ="";
+        futureWindT.text ="";
+        futureHumidityT.text ="";
         futureAPT.text ="1025";
     
         question.text ="Based on the current weather data and predicted air pressure, what will be tomorrow's forecast?";
@@ -439,6 +445,9 @@ public class MCQuestion : MonoBehaviour {
 
        
         futureAPT.text ="982";
+         futureTempT.text ="";
+        futureWindT.text ="";
+        futureHumidityT.text ="";
 
         question.text ="Based on the current weather data and predicted air pressure, what will be tomorrow's forecast?";
         rightT = "Correct! The air pressure went from high to low indicating that bad weather is on its way. The high humidity also indicates a high chance of rain.";
@@ -461,6 +470,9 @@ public class MCQuestion : MonoBehaviour {
 
        
         futureAPT.text ="1017";
+         futureTempT.text ="";
+        futureWindT.text ="";
+        futureHumidityT.text ="";
 
         question.text ="Based on the current weather data and predicted air pressure, what will be tomorrow's forecast?";
         rightT = "Correct. The air pressure went up dramatically indicating that warmer, clearer weather was on its way.";

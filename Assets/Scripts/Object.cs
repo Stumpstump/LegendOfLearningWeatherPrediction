@@ -24,7 +24,7 @@ public class Object : MonoBehaviour {
 	void Start () {
         
         if (baro == true){
-        description = "This is a barometer. A barometer is an instrument used to measure atmospheric pressure. To calibrate your barometer, click and drag the black pointer and move your mouse left or right until it points to the current air pressure. Then, click on the red pointer and align it with the black one.";
+        description = "To calibrate your barometer, click and drag the black pointer and move your mouse left or right until it points to the current air pressure. Then, click on the red pointer and align it with the black one. Generally, the lower the air pressure the colder and worse the weather is. The higher air pressure is generally warmer and better weather.";
         
         }
 	

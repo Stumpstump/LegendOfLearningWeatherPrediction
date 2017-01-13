@@ -25,6 +25,14 @@ public class GameManager : MonoBehaviour  {
     public float windSpeedM;
     public float windSpeedK;
 
+      ////////////Crap in scene
+
+    public Text displayTemp;
+    public Text displayWind;
+    public Text displayHumid;
+    public Text displayAPC;
+    public Text displayAPF;
+
     public float predictTemp;
     public int predictAirPressure;
     public float predictHumidity;
@@ -71,6 +79,12 @@ public class GameManager : MonoBehaviour  {
         predictWind = 26f;
          Scene1 = true;
 
+        displayTemp.text = "68°F";
+        displayWind.text = "13 MPH";
+        displayHumid.text ="35%";
+        displayAPC.text = "1007";
+        displayAPF.text = "966";
+
      }
 
 
@@ -88,6 +102,12 @@ public class GameManager : MonoBehaviour  {
         predictHumidity = 15f;
         predictWind = 10f;
         Scene2 = true;
+
+        displayTemp.text = "79°F";
+        displayWind.text = "10 MPH";
+        displayHumid.text ="15%";
+        displayAPC.text = "1028";
+        displayAPF.text = "1038";
     }
 
 
@@ -105,6 +125,12 @@ public class GameManager : MonoBehaviour  {
         predictHumidity = 25f;
         predictWind = 18f;
         Scene3 = true;
+
+        displayTemp.text = "54°F";
+        displayWind.text = "15 MPH";
+        displayHumid.text ="10%";
+        displayAPC.text = "994";
+        displayAPF.text = "1012";
 
     }
     //Call when changing dialogue shown
