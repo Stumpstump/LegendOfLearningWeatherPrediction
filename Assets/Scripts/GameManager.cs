@@ -176,7 +176,9 @@ public class GameManager : MonoBehaviour  {
     public void Restart(){
         SceneManager.LoadScene ("_Init");
         progress = 0;
+        LOLSDK.Instance.PlaySound("FX/click1.mp3");
         LOLSDK.Instance.StopSound( "Music/birdy.mp3");
+        
     }
 
     public void StartStage2(){
