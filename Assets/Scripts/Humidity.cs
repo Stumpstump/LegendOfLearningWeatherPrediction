@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-
+using LoLSDK;
 public class Humidity : MonoBehaviour {
 
     public GameObject humidity;
@@ -66,7 +66,7 @@ public class Humidity : MonoBehaviour {
         
         }
 
-        
+        LOLSDK.Instance.PlaySound("FX/click1.mp3");
     }
 
     private IEnumerator CycleNumbers() {

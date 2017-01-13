@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using LoLSDK;
 
 public class Anemometer : MonoBehaviour {
 
@@ -61,12 +62,15 @@ public class Anemometer : MonoBehaviour {
          //manually have values here
         if (proper == true){
         mph = false;
+        LOLSDK.Instance.PlaySound("FX/click1.mp3");
         }
     }
     public void KMHtoMPH(){
         if (proper == true){
         mph = true;
+        LOLSDK.Instance.PlaySound("FX/click1.mp3");
         }
+       
     }
 
     public void TurnOn(){
@@ -85,7 +89,7 @@ public class Anemometer : MonoBehaviour {
         sec = 0;
         
         }
-
+        LOLSDK.Instance.PlaySound("FX/click1.mp3");
         
     }
     

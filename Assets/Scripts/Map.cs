@@ -14,9 +14,9 @@ public class Map : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-    map1.enabled = false;   
-    map2.enabled = false;
-    map3.enabled = false;
+    map1.gameObject.SetActive(false);
+    map2.gameObject.SetActive(false);
+    map3.gameObject.SetActive(false);
 	
 	}
 	
@@ -28,13 +28,13 @@ public class Map : MonoBehaviour {
     public void Activate(){
 
         if (gm.Scene1 == true){
-            map1.enabled = true;   
+            map1.gameObject.SetActive(true);
         }
         else if (gm.Scene2 == true){
-            map2.enabled = true;   
+            map2.gameObject.SetActive(true); 
         }
         else if (gm.Scene3 == true){
-            map3.enabled = true;   
+            map3.gameObject.SetActive(true);
         }
 
     }

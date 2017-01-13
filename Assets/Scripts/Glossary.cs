@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using LoLSDK;
 
 public class Glossary : MonoBehaviour {
 
@@ -23,10 +24,11 @@ public class Glossary : MonoBehaviour {
 
         description.text = thisDescription.text;
         title.text = name;
+        LOLSDK.Instance.PlaySound("FX/click1.mp3");
     }
  
     public void Reset(){
-
+        LOLSDK.Instance.PlaySound("FX/click1.mp3");
         title.text = "Glossary";
         description.text = "Click the terms on the left to read a definition!";
 

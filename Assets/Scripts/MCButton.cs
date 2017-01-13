@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using LoLSDK;
 
 public class MCButton : MonoBehaviour {
 
@@ -10,7 +11,7 @@ public class MCButton : MonoBehaviour {
     public string wrongAnswer2;
     public string wrongAnswer3;
 
-   public bool dontshow;
+   
 
     
     public GameObject rightPopup;
@@ -185,10 +186,9 @@ public class MCButton : MonoBehaviour {
     }
 
     void RightAnswer(){
+               
         
-        gm.ProgressUpdate();
-        
-        
+        LOLSDK.Instance.PlaySound("FX/click1.mp3");
         rightPopup.SetActive(true);
         wrongPopup.SetActive(false);
         
@@ -199,7 +199,7 @@ public class MCButton : MonoBehaviour {
 
         //WdesBox.text = wrongDes;
         
-       
+       LOLSDK.Instance.PlaySound("FX/click1.mp3");
         wrongPopup.SetActive(true);
         rightPopup.SetActive(false);
         
