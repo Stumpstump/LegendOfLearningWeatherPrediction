@@ -369,6 +369,7 @@ public class MCQuestion : MonoBehaviour {
         futureHumidityT.text ="41%";
         futureAPT.text ="996";
 
+        //Missing rationale
         question.text ="You have been provided what kind of weather will happen tomorrow. Based on that information, what was the temperature?";
         rightT = "";
         answers.rightAnswer = "64°F";
