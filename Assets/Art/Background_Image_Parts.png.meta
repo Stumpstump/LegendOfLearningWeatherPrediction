@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8dc80ec59bf2a6247bfdf3d6466e93b9
-timeCreated: 1483994477
+timeCreated: 1484785567
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -37,6 +37,11 @@ TextureImporter:
     21300060: transparent02
     21300062: 0%
     21300064: ButtonHover
+    21300066: Book
+    21300068: Book2
+    21300070: onclick1
+    21300072: onclick2
+    21300074: onclick3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -509,6 +514,71 @@ TextureImporter:
         y: 60
         width: 7
         height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Book
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 241
+        width: 90
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Book2
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 351
+        width: 91
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: onclick1
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 562
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: onclick2
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 562
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: onclick3
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 562
+        width: 88
+        height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
