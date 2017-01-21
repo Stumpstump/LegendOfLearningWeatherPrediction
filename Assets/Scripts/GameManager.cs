@@ -41,6 +41,10 @@ public class GameManager : MonoBehaviour  {
     public bool Scene1;
     public bool Scene2;
     public bool Scene3;
+
+    public GameObject stage15panel;
+
+
     
     //Progress the student has made
     public int progress; 
@@ -66,11 +70,11 @@ public class GameManager : MonoBehaviour  {
 
     public void Scenario1(){
         //Cold rain windy
-        temp = 68f;
-        airPressure = 1007;
-        humidity = 35f;
-        windSpeedM = 13f;
-        windSpeedK = 20.92f;
+        temp = 55f;
+        airPressure = 985;
+        humidity = 88f;
+        windSpeedM = 18f;
+        windSpeedK = 29f;
         isAirPressureLow = true;
 
         predictTemp = 44f;
@@ -79,22 +83,18 @@ public class GameManager : MonoBehaviour  {
         predictWind = 26f;
          Scene1 = true;
 
-        displayTemp.text = "68°F";
-        displayWind.text = "13 MPH";
-        displayHumid.text ="35%";
-        displayAPC.text = "1007";
-        displayAPF.text = "966";
+       
 
      }
 
 
     public void Scenario2(){
         //Hot sunny calm
-        temp = 79f;
-        airPressure = 1028;
-        humidity = 15f;
-        windSpeedM = 10f;
-        windSpeedK = 16.09f;
+        temp = 94f;
+        airPressure = 1038;
+        humidity = 22f;
+        windSpeedM = 4f;
+        windSpeedK = 6.4f;
         isAirPressureLow = false;
 
         predictTemp = 85f;
@@ -103,21 +103,17 @@ public class GameManager : MonoBehaviour  {
         predictWind = 10f;
         Scene2 = true;
 
-        displayTemp.text = "79°F";
-        displayWind.text = "10 MPH";
-        displayHumid.text ="15%";
-        displayAPC.text = "1028";
-        displayAPF.text = "1038";
+       
     }
 
 
     public void Scenario3(){
         //Cool, cloudy, dry, windy
-        temp = 54f;
-        airPressure = 994;
-        humidity = 10f;
-        windSpeedM = 15f;
-        windSpeedK = 24.14f;
+        temp = 42f;
+        airPressure = 960;
+        humidity = 65f;
+        windSpeedM = 11f;
+        windSpeedK = 17.7f;
         isAirPressureLow = false;
 
         predictTemp = 63f;
@@ -126,13 +122,27 @@ public class GameManager : MonoBehaviour  {
         predictWind = 18f;
         Scene3 = true;
 
-        displayTemp.text = "54°F";
-        displayWind.text = "15 MPH";
-        displayHumid.text ="10%";
-        displayAPC.text = "994";
-        displayAPF.text = "1012";
 
     }
+
+    public void Scenario4(){
+        //Warm rain 
+        temp = 68f;
+        airPressure = 1003;
+        humidity = 67f;
+        windSpeedM = 9f;
+        windSpeedK = 14.5f;
+        isAirPressureLow = true;
+
+        predictTemp = 44f;
+        predictAirPressure = 966;
+        predictHumidity = 50f;
+        predictWind = 26f;
+         Scene1 = true;
+
+       
+
+     }
     //Call when changing dialogue shown
     public void UpdateDB(string newtext){
     
@@ -151,6 +161,9 @@ public class GameManager : MonoBehaviour  {
         if (progress == 6){
             animator.enabled = true;
 
+        }
+        if (progress == 9){
+            stage15panel.SetActive(true);
         }
     
     }
@@ -178,6 +191,8 @@ public class GameManager : MonoBehaviour  {
         progress = 0;
         LOLSDK.Instance.PlaySound("FX/click1.mp3");
         LOLSDK.Instance.StopSound( "Music/birdy.mp3");
+       
+       
         
     }
 

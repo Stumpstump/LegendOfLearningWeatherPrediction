@@ -15,13 +15,25 @@ public class Humidity : MonoBehaviour {
     
     private bool on;
     public Button endbutton;
+    public bool TestScene;
 
 	// Use this for initialization
 	void Start () {
+        
+        if (TestScene == false){
+        on = false;
         humidity.gameObject.SetActive(false);
         proper = false;
-        on = false;
-        endbutton.interactable = false;
+        }
+        else if (TestScene == true){
+            on = true;
+            generate = false;
+            proper = true;
+            humidity.gameObject.SetActive(true);
+        }
+        if (endbutton != null){
+    endbutton.interactable = false;
+        }
 	
 	}
 	
@@ -45,8 +57,10 @@ public class Humidity : MonoBehaviour {
 	}
 
     public void ShowNumbers(){
-            humidity.GetComponent<Text>().text = gm.humidity.ToString() + ".00%";
-            endbutton.interactable = true;
+            humidity.GetComponent<Text>().text = gm.humidity.ToString() + "%";
+            if (endbutton != null){
+    endbutton.interactable = true;
+        }
             
     }
     public void TurnOn(){
@@ -67,6 +81,11 @@ public class Humidity : MonoBehaviour {
         }
 
         LOLSDK.Instance.PlaySound("FX/click1.mp3");
+    }
+
+    public void Reset() {
+
+        humidity.GetComponent<Text>().text = gm.humidity.ToString() + ".00%";
     }
 
     private IEnumerator CycleNumbers() {

@@ -11,11 +11,15 @@ public class Thermometer : MonoBehaviour {
     private float timerFloat;
     private float timer = 0;
     public Button endbutton;
+
+    public bool TestScene;
 	// Use this for initialization
 	void Start () {
 
-    temperature = gm.temp;
+    temperature = 0;
+     if (endbutton != null){
     endbutton.interactable = false;
+        }
         
 	
 	}
@@ -23,8 +27,8 @@ public class Thermometer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
          if (slide == false){
-            timer += 1f * Time.deltaTime;
-            if (timer >= 1f){
+            timer += 0.5f * Time.deltaTime;
+            if (timer >= 0.5f){
                 slide = true;
             }
 
@@ -32,10 +36,19 @@ public class Thermometer : MonoBehaviour {
         if (slide == true){
             timerFloat += Time.deltaTime;
             temp.value = Mathf.Lerp(-9f, temperature, timerFloat);
-            endbutton.interactable = true;
+            if (endbutton != null){
+    endbutton.interactable = true;
+        }
         }
 	
 	}
 
 
+    public void Reset(){
+    timer = 0.3f;
+    timerFloat = 0;
+    temperature = gm.temp;
+    slide = false;
+
+    }
 }

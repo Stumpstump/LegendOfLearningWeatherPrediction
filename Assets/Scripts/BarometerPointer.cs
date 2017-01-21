@@ -14,7 +14,8 @@ public class BarometerPointer : MonoBehaviour {
 
     public GameObject pointer;
 
-    
+    public Text currentAP;
+    public Text futureAP;
 
     public bool done;
 
@@ -24,6 +25,8 @@ public class BarometerPointer : MonoBehaviour {
 	void Start () {
     
     locked = true;
+    
+    done = false;
     pointer.transform.eulerAngles = new Vector3(0, 0, Random.Range(-132f,134f));
     
     
@@ -33,31 +36,64 @@ public class BarometerPointer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-        if (locked == false){
-            if (Mathf.Abs(gameObject.transform.eulerAngles.z - pointer.transform.eulerAngles.z) < 1.5){
-                locked = true;
-                done = true;
-                
-                
-
-            }
-
-        }
+        
 	}
 
-        public void MouseClick () // When clicked
-    {
-        tOffset = transform.eulerAngles.z;
-        mOffset = Input.mousePosition.x; // record where the cursor was when the object was clicked
-    }
-     
-    public void MouseDrag () // For every frame the mouse is still down
-    {
-        if (locked == false){
-            newpos = (Input.mousePosition.x - mOffset) + tOffset; // Set the rotation to (how far the mouse has moved) + where we were
-         gameObject.transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, newpos);
-        }
-    }
+    
 
+    public void Scene1(){
+        pointer.transform.eulerAngles = new Vector3(0, 0, 38f);
+        transform.eulerAngles = new Vector3(0,0,38f);
+        if (currentAP != false && futureAP != false){
+            currentAP.text = "985";
+            futureAP.text = "1000";
+        }
+        pointer.GetComponent<BarometerBlack>().ap = 2;
+        pointer.GetComponent<BarometerBlack>().targetAngleHigh= new Vector3(0,0,0f);
+        done = true;
+        locked = true;
+        pointer.GetComponent<BarometerBlack>().timer = 0;
+        
+
+    }
+    public void Scene2(){
+        pointer.transform.eulerAngles = new Vector3(0, 0, -99f);
+        transform.eulerAngles = new Vector3(0,0,-99f);
+        pointer.GetComponent<BarometerBlack>().ap = 9;
+        pointer.GetComponent<BarometerBlack>().targetAngleHigh= new Vector3(0,0,-75f);
+         if (currentAP != false && futureAP != false){
+            currentAP.text = "1038";
+            futureAP.text = "1029";
+        }
+        locked = true;
+        done = true;
+        pointer.GetComponent<BarometerBlack>().timer = 0;
+    }
+    public void Scene3(){
+        pointer.transform.eulerAngles = new Vector3(0, 0, 109f);
+        transform.eulerAngles = new Vector3(0,0,109f);
+        pointer.GetComponent<BarometerBlack>().ap = 5;
+        pointer.GetComponent<BarometerBlack>().targetAngleHigh= new Vector3(0,0,28f);
+         if (currentAP != false && futureAP != false){
+            currentAP.text = "960";
+            futureAP.text = "988";
+        }
+        locked = true;
+        done = true;
+        pointer.GetComponent<BarometerBlack>().timer = 0;
+    }
+    public void Scene4(){
+        pointer.transform.eulerAngles = new Vector3(0, 0, 2f);
+        transform.eulerAngles = new Vector3(0,0,2f);
+        pointer.GetComponent<BarometerBlack>().ap = 7;
+        pointer.GetComponent<BarometerBlack>().targetAngleHigh= new Vector3(0,0,93f);
+         if (currentAP != false && futureAP != false){
+            currentAP.text = "1003";
+            futureAP.text = "965";
+        }
+        locked = true;
+        done = true;
+        pointer.GetComponent<BarometerBlack>().timer = 0;
+    }
     
 }

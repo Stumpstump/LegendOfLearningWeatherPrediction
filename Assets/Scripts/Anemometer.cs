@@ -16,14 +16,27 @@ public class Anemometer : MonoBehaviour {
     public GameManager gm;
     public Button endbutton;
         private bool mph;
+    public bool TestScene;
         
 	// Use this for initialization
 	void Start () {
+        
+        
+         if (TestScene == false){
+        on = false;
         display.gameObject.SetActive(false);
         proper = false;
         generate = false;
-        on = false;
-        endbutton.interactable = false;
+        }
+        else if (TestScene == true){
+            on = true;
+            generate = false;
+            proper = true;
+            display.gameObject.SetActive(true);
+        }
+        if (endbutton != null){
+    endbutton.interactable = false;
+        }
         mph = true;
 	}
 	
@@ -46,7 +59,9 @@ public class Anemometer : MonoBehaviour {
             else if (mph == false){
                 display.text = gm.windSpeedK.ToString() + " KPH"; 
             }
-            endbutton.interactable = true;
+            if (endbutton != null){
+    endbutton.interactable = true;
+        }
             
         }
 	}
@@ -91,6 +106,17 @@ public class Anemometer : MonoBehaviour {
         }
         LOLSDK.Instance.PlaySound("FX/click1.mp3");
         
+    }
+
+    public void Reset(){
+        if (mph == true){
+
+            display.text = gm.windSpeedM.ToString() + " MPH"; 
+            }
+            else if (mph == false){
+                display.text = gm.windSpeedK.ToString() + " KPH"; 
+            }
+
     }
     
 }
