@@ -159,7 +159,7 @@ public class MCQuestion : MonoBehaviour {
         wrongT3 = "Tomorrow's weather turned out to be exactly what you said! Great job! When the air pressure drops significantly it indicates that bad weather is coming. This includes fast wind speeds, a drop in temperature, and rainy weather.";
 
         }
-        if (gm.Scene2 == true){
+        else if (gm.Scene2 == true){
 
             answers.rightAnswer = "Tomorrow will be a hot sunny calm day.";
         rightT = "Tomorrow's weather turned out to be exactly what you said! Great job! The air pressure stayed the same, which means that the weather stayed about the same.";
@@ -171,7 +171,7 @@ public class MCQuestion : MonoBehaviour {
         wrongT3 = "Oh no, your prediction was wrong. Tomorrow turned out to be a hot sunny calm day. Let's look over the data again. The air pressure stayed the same. This means that no significant weather changes are coming. The temperature, wind speed, and humidity will all stay about the same. Next time you can use that information to make a better prediction. ";
 
         }
-        if (gm.Scene3 == true){
+        else if (gm.Scene3 == true){
 
             answers.rightAnswer = "Tomorrow will be a cool cloudy windy day";
         rightT = "Tomorrow's weather turned out to be exactly what you said! Great job! The air pressure went up meaning that the weather got a bit warmer and is starting to clear up.";

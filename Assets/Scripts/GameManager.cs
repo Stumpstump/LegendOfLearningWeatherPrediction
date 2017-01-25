@@ -42,7 +42,13 @@ public class GameManager : MonoBehaviour  {
     public bool Scene2;
     public bool Scene3;
 
-    public GameObject stage15panel;
+    public Text tempy;
+    public Text windy;
+    public Text humidy;
+    public Text apy;
+    public Text apyp;
+
+    public GameObject stage15done;
 
 
     
@@ -68,6 +74,80 @@ public class GameManager : MonoBehaviour  {
 	
 	}
 
+    public void TriggerPredict(){
+        int randy = Random.Range(1,4);
+        if (randy == 1){
+                Predict1();
+                tempy.text = temp.ToString();
+                apy.text = airPressure.ToString();
+                windy.text = windSpeedM.ToString();
+                humidy.text = humidity.ToString();
+                apyp.text = predictAirPressure.ToString();
+                Scene1 = true;
+            }
+        if (randy == 2){
+                Predict2();
+                tempy.text = temp.ToString();
+                apy.text = airPressure.ToString();
+                windy.text = windSpeedM.ToString();
+                humidy.text = humidity.ToString();
+                apyp.text = predictAirPressure.ToString();
+                Scene2 = true;
+            }
+        if (randy == 3){
+                Predict3();
+                tempy.text = temp.ToString();
+                apy.text = airPressure.ToString();
+                windy.text = windSpeedM.ToString();
+                humidy.text = humidity.ToString();
+                apyp.text = predictAirPressure.ToString();
+                Scene3 = true;
+            }
+
+    }
+
+    public void Predict1(){
+         temp = 68f;
+        airPressure = 1007;
+        humidity = 35;
+        windSpeedM = 13;
+       
+        isAirPressureLow = true;
+
+      
+        predictAirPressure = 966;
+       
+
+    }
+
+    public void Predict2(){
+         temp = 79f;
+        airPressure = 1028;
+        humidity = 15;
+        windSpeedM = 6f;
+       
+        isAirPressureLow = true;
+
+    
+        predictAirPressure = 1038;
+      
+
+    }
+
+    public void Predict3(){
+
+         temp = 54f;
+        airPressure = 994;
+        humidity = 10f;
+        windSpeedM = 15f;
+        
+        isAirPressureLow = true;
+
+  
+        predictAirPressure = 1012;
+        
+    }
+
     public void Scenario1(){
         //Cold rain windy
         temp = 55f;
@@ -81,7 +161,7 @@ public class GameManager : MonoBehaviour  {
         predictAirPressure = 966;
         predictHumidity = 50f;
         predictWind = 26f;
-         Scene1 = true;
+      
 
        
 
@@ -101,7 +181,7 @@ public class GameManager : MonoBehaviour  {
         predictAirPressure = 1038;
         predictHumidity = 15f;
         predictWind = 10f;
-        Scene2 = true;
+       
 
        
     }
@@ -120,7 +200,7 @@ public class GameManager : MonoBehaviour  {
         predictAirPressure = 1012;
         predictHumidity = 25f;
         predictWind = 18f;
-        Scene3 = true;
+      
 
 
     }
@@ -138,7 +218,7 @@ public class GameManager : MonoBehaviour  {
         predictAirPressure = 966;
         predictHumidity = 50f;
         predictWind = 26f;
-         Scene1 = true;
+      
 
        
 
@@ -163,13 +243,16 @@ public class GameManager : MonoBehaviour  {
 
         }
         if (progress == 9){
-            stage15panel.SetActive(true);
+            stage15done.SetActive(true);
         }
     
     }
 
     public void StartGame(){
         stage1 = true;
+        Scene1 = false;
+        Scene2 = false;
+        Scene3 = false;
         stage1panel.SetActive(true);
          menuPanel.SetActive(false);
         LOLSDK.Instance.PlaySound( "Music/birdy.mp3", true, true);

@@ -204,5 +204,6 @@ public class MCButton : MonoBehaviour {
         rightPopup.SetActive(false);
         
         
+        
     }
 }

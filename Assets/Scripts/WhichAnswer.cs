@@ -29,7 +29,7 @@ public class WhichAnswer : MonoBehaviour {
     
 
     public void Activate(){
-
+    GetComponent<Button>().interactable = true;
         if (right == true){
             RdesBox.text = q.rightT;
            
@@ -58,6 +58,15 @@ public class WhichAnswer : MonoBehaviour {
             wrong1 = false;
             wrong2 = false;
             wrong3 = false;
+
+    }
+
+    public void Disable(){
+        if (wrong1 == true || wrong2 == true || wrong3 == true){
+            GetComponent<Button>().interactable = false;
+
+        }
+
 
     }
 }
