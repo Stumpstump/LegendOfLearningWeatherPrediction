@@ -23,7 +23,7 @@ public class DumbFrigginButtons : MonoBehaviour {
         button2.interactable = false;
         button3.interactable = false;
         button4.interactable = false;
-        button1.image.color = Color.blue;
+
 
     }
 
