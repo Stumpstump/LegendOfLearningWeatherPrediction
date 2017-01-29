@@ -53,7 +53,7 @@ public class BarometerBlack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(gameObject.transform.eulerAngles.z);
+        
      if (locked == false){
             
            /*  if (ap == 2){

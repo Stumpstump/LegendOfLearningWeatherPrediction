@@ -113,7 +113,7 @@ public class MCQuestion : MonoBehaviour {
             set3 = false;
             set4 = true;
              int randy = Random.Range(10,13);
-            Debug.Log(randy);
+           
             if (randy == 10){
                 Question10();
             }

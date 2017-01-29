@@ -74,6 +74,11 @@ public class GameManager : MonoBehaviour  {
 	
 	}
 
+    public void Finish(){
+        LOLSDK.Instance.CompleteGame();
+
+    }
+
     public void TriggerPredict(){
         int randy = Random.Range(1,4);
         if (randy == 1){
@@ -237,7 +242,7 @@ public class GameManager : MonoBehaviour  {
 
     public void ProgressUpdate (){
         progress += 1;
-        LOLSDK.Instance.SubmitProgress(0, progress, 12);  
+        LOLSDK.Instance.SubmitProgress(0, progress, 14);  
         if (progress == 6){
             animator.enabled = true;
 
