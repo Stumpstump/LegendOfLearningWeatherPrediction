@@ -143,9 +143,9 @@ public class MCQuestion : MonoBehaviour {
         currentTempT.text = gm.temp + "°F";
         currentWindT.text = gm.windSpeedM + " MPH";
         currentHumidityT.text = gm.humidity.ToString() + "%";
-        currentAPT.text = gm.airPressure.ToString();
+        currentAPT.text = gm.airPressure.ToString() + "Mb";
 
-        futureAPT.text = gm.predictAirPressure.ToString();
+        futureAPT.text = gm.predictAirPressure.ToString() + "Mb";
         question.text = "What will the weather be like tomorrow based on the data you collect?";
 
         if (gm.Scene1 == true){
@@ -193,7 +193,7 @@ public class MCQuestion : MonoBehaviour {
         currentTempT.text ="88°F";
         currentWindT.text ="5 MPH";
         currentHumidityT.text ="15%";
-        currentAPT.text ="1033";
+        currentAPT.text ="1033 Mb";
 
         question.text = "Describe what the day one weather is like. Choose the closest answer.";
 
@@ -214,7 +214,7 @@ public class MCQuestion : MonoBehaviour {
         currentTempT.text ="62°F";
         currentWindT.text ="23 MPH";
         currentHumidityT.text ="77%";
-        currentAPT.text ="977";
+        currentAPT.text ="977 Mb";
 
         question.text = "Describe what the day one weather is like. Choose the closest answer.";
         rightT = "Correct! Mild temperatures, high humidity, fast wind speeds, and low air pressure all point to a cool stormy day.";
@@ -234,7 +234,7 @@ public class MCQuestion : MonoBehaviour {
         currentTempT.text ="92°F";
         currentWindT.text ="9 MPH";
         currentHumidityT.text ="68%";
-        currentAPT.text ="998";
+        currentAPT.text ="998 Mb";
 
         question.text = "Describe what the day one weather is like. Choose the closest answer.";
         rightT = "Correct! High temperature, high humidity, and mild air pressure point to a hot humid day.";
@@ -258,12 +258,12 @@ public class MCQuestion : MonoBehaviour {
         currentTempT.text ="86°F";
         currentWindT.text ="7 MPH";
         currentHumidityT.text ="16%";
-        currentAPT.text ="1031";
+        currentAPT.text ="1031 Mb";
 
         futureTempT.text ="55°F";
         futureWindT.text ="22 MPH";
         futureHumidityT.text ="41%";
-        futureAPT.text ="981";
+        futureAPT.text ="981 Mb";
 
         question.text = "Compare the day one data and the day two data. How did the weather change between them?";
         rightT = "Correct! Great job! It went from a hot dry day to a cool stormy day";
@@ -283,12 +283,12 @@ public class MCQuestion : MonoBehaviour {
         currentTempT.text ="61°F";
         currentWindT.text ="20 MPH";
         currentHumidityT.text ="73%";
-        currentAPT.text ="974";
+        currentAPT.text ="974 Mb";
 
         futureTempT.text ="88°F";
         futureWindT.text ="7 MPH";
         futureHumidityT.text ="43%";
-        futureAPT.text ="1011";
+        futureAPT.text ="1011 Mb";
 
         question.text = "Compare the day one data and the day two data. How did the weather change between them?";
         rightT = "Correct! Great job! It went from a cool stormy day to a hot dry day.";
@@ -308,12 +308,12 @@ public class MCQuestion : MonoBehaviour {
         currentTempT.text ="91°F";
         currentWindT.text ="11 MPH";
         currentHumidityT.text ="70%";
-        currentAPT.text ="1001";
+        currentAPT.text ="1001 Mb";
     
         futureTempT.text ="89°F";
         futureWindT.text ="7 MPH";
         futureHumidityT.text ="64%";
-        futureAPT.text ="1004";
+        futureAPT.text ="1004 Mb";
 
         question.text = "Compare the day one data and the day two data. How did the weather change between them?";
         rightT = "Correct! Great job! The air pressure did not change, meaning the weather did not either.";
@@ -337,12 +337,12 @@ public class MCQuestion : MonoBehaviour {
         currentTempT.text ="70°F";
         currentWindT.text ="?";
         currentHumidityT.text ="31%";
-        currentAPT.text ="1010";
+        currentAPT.text ="1010 Mb";
 
         futureTempT.text ="48°F";
         futureWindT.text ="26 MPH";
         futureHumidityT.text ="88%";
-        futureAPT.text ="985";
+        futureAPT.text ="985 Mb";
 
         question.text = "You have been provided what kind of weather will happen on day two. Based on that information, what was the wind speed?";
         rightT = "Correct! Based on the air pressure and higher humidity, you can assume that the weather went from calm to stormy.";
@@ -362,12 +362,12 @@ public class MCQuestion : MonoBehaviour {
         currentTempT.text ="?";
         currentWindT.text ="19 MPH";
         currentHumidityT.text ="69%";
-        currentAPT.text ="978";
+        currentAPT.text ="978 Mb";
 
         futureTempT.text ="73°F";
         futureWindT.text ="13 MPH";
         futureHumidityT.text ="41%";
-        futureAPT.text ="996";
+        futureAPT.text ="996 Mb";
 
         //Missing rationale
         question.text = "You have been provided what kind of weather will happen on day two. Based on that information, what was the temperature?";
@@ -393,14 +393,14 @@ public class MCQuestion : MonoBehaviour {
         futureTempT.text ="90°F";
         futureWindT.text ="8 MPH";
         futureHumidityT.text ="64%";
-        futureAPT.text ="1025";
+        futureAPT.text ="1025 Mb";
 
         question.text = "You have been provided what kind of weather will happen on day two. Based on that information, what was the air pressure?";
         rightT = "Correct! The temperature, wind speed, and humidity all stayed the same. This indicates that there was no change in air pressure.";
-        answers.rightAnswer = "1024";
-        answers.wrongAnswer1 = "961";
-        answers.wrongAnswer2 = "1041";
-        answers.wrongAnswer3 = "989";
+        answers.rightAnswer = "1024 Mb";
+        answers.wrongAnswer1 = "961 Mb";
+        answers.wrongAnswer2 = "1041 Mb";
+        answers.wrongAnswer3 = "989 Mb";
     
         wrongT1 = "Incorrect. Look at the difference in the temperature.";
         wrongT2 = "Incorrect. Look at the difference in humidity.";
@@ -417,13 +417,13 @@ public class MCQuestion : MonoBehaviour {
         currentTempT.text ="90°F";
         currentWindT.text ="8 MPH";
         currentHumidityT.text ="33%";
-        currentAPT.text ="1030";
+        currentAPT.text ="1030 Mb";
 
 
         futureTempT.text ="";
         futureWindT.text ="";
         futureHumidityT.text ="";
-        futureAPT.text ="1025";
+        futureAPT.text ="1025 Mb";
     
         question.text = "Based on the information what will be the forecast on day two?";
         rightT = "Correct! There was not a change in the air pressure, indicating that the weather has not changed much. The day before was was a hot, dry, calm day and so should the day after.";
@@ -442,10 +442,10 @@ public class MCQuestion : MonoBehaviour {
         currentTempT.text ="83°F";
         currentWindT.text ="5 MPH";
         currentHumidityT.text ="68%";
-        currentAPT.text ="1024";
+        currentAPT.text ="1024 Mb";
 
        
-        futureAPT.text ="982";
+        futureAPT.text ="982 Mb";
          futureTempT.text ="";
         futureWindT.text ="";
         futureHumidityT.text ="";
@@ -467,10 +467,10 @@ public class MCQuestion : MonoBehaviour {
         currentTempT.text ="55°F";
         currentWindT.text ="23 MPH";
         currentHumidityT.text ="88%";
-        currentAPT.text ="972";
+        currentAPT.text ="972 Mb";
 
        
-        futureAPT.text ="1017";
+        futureAPT.text ="1017 Mb";
          futureTempT.text ="";
         futureWindT.text ="";
         futureHumidityT.text ="";
