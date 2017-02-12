@@ -242,12 +242,12 @@ public class GameManager : MonoBehaviour  {
 
     public void ProgressUpdate (){
         progress += 1;
-        LOLSDK.Instance.SubmitProgress(0, progress, 14);  
+        LOLSDK.Instance.SubmitProgress(0, progress, 15);  
         if (progress == 6){
             animator.enabled = true;
 
         }
-        if (progress == 9){
+        if (progress == 10){
             stage15done.SetActive(true);
         }
     

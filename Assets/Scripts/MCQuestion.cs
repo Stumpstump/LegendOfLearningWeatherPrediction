@@ -178,9 +178,9 @@ public class MCQuestion : MonoBehaviour {
         answers.wrongAnswer1 = "Tomorrow will be a hot sunny calm day.";
         answers.wrongAnswer2 = "Tomorrow will be a cold dry calm day.";
         answers.wrongAnswer3 = "Tomorrow will be a hot rainy day.";
-        wrongT1 = "Your prediction was inccorect. Tomorrow turned out to be a cool windy day. Let's look over the data again. The air pressure went up a little bit. This indicates that the weather is getting better. Higher air pressure indicates that warmer weather is on its way and that weather is becoming more clear. Next time you can use that information to make a better prediction.  ";
-        wrongT2 = "Your prediction was inccorect. Tomorrow turned out to be a cool windy day. Let's look over the data again. The air pressure went up a little bit. This indicates that the weather is getting better. Higher air pressure indicates that warmer weather is on its way and that weather is becoming more clear. Next time you can use that information to make a better prediction.  ";
-        wrongT3 = "Your prediction was inccorect. Tomorrow turned out to be a cool windy day. Let's look over the data again. The air pressure went up a little bit. This indicates that the weather is getting better. Higher air pressure indicates that warmer weather is on its way and that weather is becoming more clear. Next time you can use that information to make a better prediction.  ";
+        wrongT1 = "Your prediction was incorrect. Tomorrow turned out to be a cool windy day. Let's look over the data again. The air pressure went up a little bit. This indicates that the weather is getting better. Higher air pressure indicates that warmer weather is on its way and that weather is becoming more clear. Next time you can use that information to make a better prediction.  ";
+        wrongT2 = "Your prediction was incorrect. Tomorrow turned out to be a cool windy day. Let's look over the data again. The air pressure went up a little bit. This indicates that the weather is getting better. Higher air pressure indicates that warmer weather is on its way and that weather is becoming more clear. Next time you can use that information to make a better prediction.  ";
+        wrongT3 = "Your prediction was incorrect. Tomorrow turned out to be a cool windy day. Let's look over the data again. The air pressure went up a little bit. This indicates that the weather is getting better. Higher air pressure indicates that warmer weather is on its way and that weather is becoming more clear. Next time you can use that information to make a better prediction.  ";
 
         }
 
@@ -195,7 +195,7 @@ public class MCQuestion : MonoBehaviour {
         currentHumidityT.text ="15%";
         currentAPT.text ="1033 Mb";
 
-        question.text = "Describe what the day one weather is like. Choose the closest answer.";
+        question.text = "Describe what the Day One weather is like. Choose the closest answer.";
 
         answers.rightAnswer = "A hot dry day with a clear sky";
         rightT = "Correct! High temperature, low humidity, and high air pressure point to a hot dry day with a clear sky.";
@@ -205,7 +205,7 @@ public class MCQuestion : MonoBehaviour {
 
         wrongT1 = "Incorrect. The humidity level is only 15%, which is low. Try again.";
         wrongT2 = "Incorrect. It is a hot day, but take another look at the air pressure.";
-        wrongT3 = "Incorrect. The temprature is fairly hot and the humidity is low.";
+        wrongT3 = "Incorrect. The temperature is fairly hot and the humidity is low.";
 
     }
 
@@ -216,7 +216,7 @@ public class MCQuestion : MonoBehaviour {
         currentHumidityT.text ="77%";
         currentAPT.text ="977 Mb";
 
-        question.text = "Describe what the day one weather is like. Choose the closest answer.";
+        question.text = "Describe what the Day One weather is like. Choose the closest answer.";
         rightT = "Correct! Mild temperatures, high humidity, fast wind speeds, and low air pressure all point to a cool stormy day.";
         answers.rightAnswer = "A cool stormy day";
         answers.wrongAnswer1 = "A hot stormy day";
@@ -344,7 +344,7 @@ public class MCQuestion : MonoBehaviour {
         futureHumidityT.text ="88%";
         futureAPT.text ="985 Mb";
 
-        question.text = "You have been provided what kind of weather will happen on day two. Based on that information, what was the wind speed?";
+        question.text = "You have been given the weather for Day Two. Based on that information, what was the wind speed on Day One?";
         rightT = "Correct! Based on the air pressure and higher humidity, you can assume that the weather went from calm to stormy.";
         answers.rightAnswer = "5 MPH";
         answers.wrongAnswer1 = "20 MPH";
@@ -370,7 +370,7 @@ public class MCQuestion : MonoBehaviour {
         futureAPT.text ="996 Mb";
 
         //Missing rationale
-        question.text = "You have been provided what kind of weather will happen on day two. Based on that information, what was the temperature?";
+        question.text = "You have been given the weather for Day Two. Based on that information, what was the temperature on Day One?";
         rightT = "Correct! The air pressure dropped a good amount. This usually means that colder weather is coming through.";
         answers.rightAnswer = "64°F";
         answers.wrongAnswer1 = "33°F";
@@ -395,7 +395,7 @@ public class MCQuestion : MonoBehaviour {
         futureHumidityT.text ="64%";
         futureAPT.text ="1025 Mb";
 
-        question.text = "You have been provided what kind of weather will happen on day two. Based on that information, what was the air pressure?";
+        question.text = "You have been given the weather for Day Two. Based on that information, what was the air pressure on Day One?";
         rightT = "Correct! The temperature, wind speed, and humidity all stayed the same. This indicates that there was no change in air pressure.";
         answers.rightAnswer = "1024 Mb";
         answers.wrongAnswer1 = "961 Mb";
