@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: a7b2dd5227672874abe3b9386a056e90
+timeCreated: 1483895025
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LargeObjects_0
+    21300002: LargeObjects_1
+    21300004: LargeObjects_2
+    21300006: LargeObjects_3
+    21300008: LargeObjects_4
+    21300010: LargeObjects_5
+    21300012: LargeObjects_6
+    21300014: LargeObjects_7
+    21300016: LargeObjects_8
+    21300018: LargeObjects_9
+    21300020: LargeObjects_10
+    21300022: LargeObjects_11
+    21300024: LargeObjects_12
+    21300026: LargeObjects_13
+    21300028: LargeObjects_14
+    21300030: LargeObjects_15
+    21300032: LargeObjects_16
+    21300034: LargeObjects_17
+    21300036: LargeObjects_18
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LargeObjects_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 358
+        width: 181
+        height: 408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 411
+        width: 63
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_2
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 474
+        width: 13
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_3
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 363
+        width: 398
+        height: 397
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_4
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 524
+        width: 37
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_5
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 527
+        width: 37
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_6
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 717
+        width: 147
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_7
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 673
+        width: 147
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_8
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 628
+        width: 69
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_9
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 627
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_10
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 542
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_11
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 580
+        width: 69
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_12
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 580
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_13
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 424
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_14
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 430
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_15
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 6
+        width: 231
+        height: 444
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_16
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 10
+        width: 424
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_17
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 10
+        width: 72
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LargeObjects_18
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 11
+        width: 71
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
