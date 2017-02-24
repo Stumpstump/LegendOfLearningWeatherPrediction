@@ -2,7 +2,7 @@
 using System.Collections;
 using LoLSDK;
 
-public class Object : MonoBehaviour {
+public class clickObject : MonoBehaviour {
 
     public bool beenClicked;
 

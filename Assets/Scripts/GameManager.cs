@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour  {
 
 	// Use this for initialization
 	void Start () {
-	 LOLSDK.Init ("stump.weathergame");
+	 
      progress = 0;
      animator.enabled = false;
      Scene1 = false;
@@ -76,6 +76,10 @@ public class GameManager : MonoBehaviour  {
 
     public void Finish(){
         LOLSDK.Instance.CompleteGame();
+        SceneManager.LoadScene ("Main");
+        progress = 0;
+        LOLSDK.Instance.PlaySound("FX/click1.mp3");
+        LOLSDK.Instance.StopSound( "Music/birdy.mp3");
 
     }
 
@@ -275,7 +279,7 @@ public class GameManager : MonoBehaviour  {
     }
 
     public void Restart(){
-        SceneManager.LoadScene ("_Init");
+        SceneManager.LoadScene ("Main");
         progress = 0;
         LOLSDK.Instance.PlaySound("FX/click1.mp3");
         LOLSDK.Instance.StopSound( "Music/birdy.mp3");
