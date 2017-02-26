@@ -174,7 +174,7 @@ public class MCQuestion : MonoBehaviour {
         else if (gm.Scene3 == true){
 
             answers.rightAnswer = "Tomorrow will be a cool cloudy windy day";
-        rightT = "Tomorrow's weather turned out to be exactly what you said! Great job! The air pressure went up meaning that the weather got a bit warmer and is starting to clear up.";
+        rightT = "Tomorrow's weather turned out to be exactly what you said! Great job! The air pressure dropped a little. This means that the weather got cooler. The drop in air pressure also indicates that it will get more windy.";
         answers.wrongAnswer1 = "Tomorrow will be a hot sunny calm day.";
         answers.wrongAnswer2 = "Tomorrow will be a cold dry calm day.";
         answers.wrongAnswer3 = "Tomorrow will be a hot rainy day.";
