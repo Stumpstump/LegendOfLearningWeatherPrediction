@@ -93,6 +93,9 @@ public class GameManager : MonoBehaviour  {
                 humidy.text = humidity.ToString();
                 apyp.text = predictAirPressure.ToString();
                 Scene1 = true;
+                Scene2 = false;
+                Scene3 = false;
+
             }
         if (randy == 2){
                 Predict2();
@@ -102,6 +105,8 @@ public class GameManager : MonoBehaviour  {
                 humidy.text = humidity.ToString();
                 apyp.text = predictAirPressure.ToString();
                 Scene2 = true;
+                Scene3 = false; 
+                Scene1 = false;
             }
         if (randy == 3){
                 Predict3();
@@ -111,6 +116,8 @@ public class GameManager : MonoBehaviour  {
                 humidy.text = humidity.ToString();
                 apyp.text = predictAirPressure.ToString();
                 Scene3 = true;
+                Scene2 = false;
+                Scene1 = false;
             }
 
     }
