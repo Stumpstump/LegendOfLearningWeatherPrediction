@@ -76,10 +76,10 @@ public class GameManager : MonoBehaviour  {
 
     public void Finish(){
         LOLSDK.Instance.CompleteGame();
-        SceneManager.LoadScene ("Main");
+        /* SceneManager.LoadScene ("Main");
         progress = 0;
         LOLSDK.Instance.PlaySound("FX/click1.mp3");
-        LOLSDK.Instance.StopSound( "Music/birdy.mp3");
+        LOLSDK.Instance.StopSound( "Music/birdy.mp3"); */
 
     }
 
