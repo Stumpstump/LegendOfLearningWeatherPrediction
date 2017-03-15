@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour  {
 
 	// Use this for initialization
 	void Start () {
-	 LOLSDK.Init ("stump.weathergame");
+	 
      progress = 0;
      animator.enabled = false;
      Scene1 = false;
@@ -76,6 +76,10 @@ public class GameManager : MonoBehaviour  {
 
     public void Finish(){
         LOLSDK.Instance.CompleteGame();
+        /* SceneManager.LoadScene ("Main");
+        progress = 0;
+        LOLSDK.Instance.PlaySound("FX/click1.mp3");
+        LOLSDK.Instance.StopSound( "Music/birdy.mp3"); */
 
     }
 
@@ -89,6 +93,9 @@ public class GameManager : MonoBehaviour  {
                 humidy.text = humidity.ToString();
                 apyp.text = predictAirPressure.ToString();
                 Scene1 = true;
+                Scene2 = false;
+                Scene3 = false;
+
             }
         if (randy == 2){
                 Predict2();
@@ -98,6 +105,8 @@ public class GameManager : MonoBehaviour  {
                 humidy.text = humidity.ToString();
                 apyp.text = predictAirPressure.ToString();
                 Scene2 = true;
+                Scene3 = false; 
+                Scene1 = false;
             }
         if (randy == 3){
                 Predict3();
@@ -107,6 +116,8 @@ public class GameManager : MonoBehaviour  {
                 humidy.text = humidity.ToString();
                 apyp.text = predictAirPressure.ToString();
                 Scene3 = true;
+                Scene2 = false;
+                Scene1 = false;
             }
 
     }
@@ -141,8 +152,8 @@ public class GameManager : MonoBehaviour  {
 
     public void Predict3(){
 
-         temp = 54f;
-        airPressure = 994;
+         temp = 49f;
+        airPressure = 984;
         humidity = 10f;
         windSpeedM = 15f;
         
@@ -275,7 +286,7 @@ public class GameManager : MonoBehaviour  {
     }
 
     public void Restart(){
-        SceneManager.LoadScene ("_Init");
+        SceneManager.LoadScene ("Main");
         progress = 0;
         LOLSDK.Instance.PlaySound("FX/click1.mp3");
         LOLSDK.Instance.StopSound( "Music/birdy.mp3");

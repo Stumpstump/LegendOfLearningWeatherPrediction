@@ -172,14 +172,14 @@ public class MCQuestion : MonoBehaviour {
         }
         else if (gm.Scene3 == true){
 
-            answers.rightAnswer = "Tomorrow will be a cool cloudy windy day";
-        rightT = "Tomorrow's weather turned out to be exactly what you said! Great job! The air pressure dropped a little. This means that the weather got cooler. The drop in air pressure also indicates that it will get more windy.";
+            answers.rightAnswer = "Tomorrow will be a cool dry calm day";
+        rightT = "Tomorrow's weather turned out to be exactly what you said! Great job! The air pressure went up a little bit. This indicates that the weather is getting better. Higher air pressure indicates that warmer weather is on its way. However, the increase was not significant enough to make the weather hot.";
         answers.wrongAnswer1 = "Tomorrow will be a hot sunny calm day.";
-        answers.wrongAnswer2 = "Tomorrow will be a cold dry calm day.";
+        answers.wrongAnswer2 = "Tomorrow will be a cold windy rainy day.";
         answers.wrongAnswer3 = "Tomorrow will be a hot rainy day.";
-        wrongT1 = "Your prediction was incorrect. Tomorrow turned out to be a cool windy day. Let's look over the data again. The air pressure went up a little bit. This indicates that the weather is getting better. Higher air pressure indicates that warmer weather is on its way and that weather is becoming more clear. Next time you can use that information to make a better prediction.  ";
-        wrongT2 = "Your prediction was incorrect. Tomorrow turned out to be a cool windy day. Let's look over the data again. The air pressure went up a little bit. This indicates that the weather is getting better. Higher air pressure indicates that warmer weather is on its way and that weather is becoming more clear. Next time you can use that information to make a better prediction.  ";
-        wrongT3 = "Your prediction was incorrect. Tomorrow turned out to be a cool windy day. Let's look over the data again. The air pressure went up a little bit. This indicates that the weather is getting better. Higher air pressure indicates that warmer weather is on its way and that weather is becoming more clear. Next time you can use that information to make a better prediction.  ";
+        wrongT1 = "Your prediction was incorrect. Tomorrow turned out to be a cool windy day. Let's look over the data again. The air pressure went up a little bit. This indicates that the weather is getting better. Higher air pressure indicates that warmer weather is on its way. Next time you can use that information to make a better prediction.  ";
+        wrongT2 = "Your prediction was incorrect. Tomorrow turned out to be a cool windy day. Let's look over the data again. The air pressure went up a little bit. This indicates that the weather is getting better. Higher air pressure indicates that warmer weather is on its way. Next time you can use that information to make a better prediction.  ";
+        wrongT3 = "Your prediction was incorrect. Tomorrow turned out to be a cool windy day. Let's look over the data again. The air pressure went up a little bit. This indicates that the weather is getting better. Higher air pressure indicates that warmer weather is on its way. Next time you can use that information to make a better prediction.  ";
 
         }
 

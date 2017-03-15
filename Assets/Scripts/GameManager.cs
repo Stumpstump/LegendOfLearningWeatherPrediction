@@ -152,8 +152,8 @@ public class GameManager : MonoBehaviour  {
 
     public void Predict3(){
 
-         temp = 54f;
-        airPressure = 994;
+         temp = 49f;
+        airPressure = 984;
         humidity = 10f;
         windSpeedM = 15f;
         
